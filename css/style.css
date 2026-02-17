@@ -1,0 +1,32 @@
+*{
+    background-color: #F8F9FA;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Manrope', sans-serif;
+}
+
+.container{
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.header-top{
+    display: flex;
+
+}
+
+.zanora-logo{
+    width: 170px;
+}
+
+.search-bar{
+    font-size: 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #FF9452;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 25px;
+    border-radius: 50px;
+}
+
