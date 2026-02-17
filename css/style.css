@@ -1,0 +1,100 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #F8F9FA;
+        }
+
+        .container {
+            max-width: 1152px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .header {
+            background: #F8F9FA;
+            padding: 20px 0;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        /* Top Row */
+        .header-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 35px;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 22px;
+            
+        }
+
+        .search-box {
+            display: flex;
+            width: 672px;
+            height: 50px;
+            
+
+        }
+
+        .search-box input {
+            flex: 1;
+            padding: 14px 25px;
+            border: 1px solid #FF9452;
+            border-radius: 50px;
+            font-size: 16px;
+        }
+
+
+        .header-actions {
+            display: flex;
+            gap: 45px;
+            font-size: 16px;
+        }
+
+        .header-actions a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* Bottom Row */
+        .header-bottom {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .category-btn {
+            font-weight:500;
+            font-size: 15px;
+            padding: 12px 20px;
+            background: #FF8C42;
+            border: none;
+            color: white;
+            border-radius: 50px;
+            cursor: pointer;
+            margin-right: 50px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 45px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .contact-btn {
+            padding: 14px 18px;
+            border: 1px solid #FF8C42;
+            border-radius: 20px;
+        }
