@@ -29,10 +29,11 @@
             margin-bottom: 35px;
         }
 
-        .logo {
-            font-weight: 700;
-            font-size: 22px;
-            
+
+        .zenora-logo{
+            width: 145px;
+            object-fit: contain;
+            object-position: center;
         }
 
         .search-box {
