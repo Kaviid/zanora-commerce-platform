@@ -18,6 +18,12 @@
     max-width: 950px;
 }
 
+.search-bar:focus{
+    outline: none;
+    border-color: #FF9452;
+    box-shadow: 0 0 0 2px rgba(255, 148, 82, 0.2);
+}
+
 .search-bar{
     font-size: 15px;
     padding-top: 16px;
@@ -31,14 +37,16 @@
 }
 
 .user-actions{
-    width: 350px;
+    margin-left: 20px;
+    width: 300px;
     display: flex;
     align-items: center;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .currency{
-margin-right: 60px;
+
 opacity: 70%;
 font-weight: 400;
 }
@@ -53,7 +61,7 @@ font-weight: 400;
 }
 
 .sign-in-button{
-    margin-right: 60px;
+
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -74,7 +82,6 @@ font-weight: 400;
 }
 
 .cart-button{
-    margin-right: 50px;
     display: flex;
     align-items: center;
     text-decoration: none;
