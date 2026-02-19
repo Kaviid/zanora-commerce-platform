@@ -2,37 +2,25 @@
 <html lang="en">
   <head>
     <title>Functions</title>
+    <style>
+      
+      button{
+        background-color: rgb(253, 144, 70);
+        color: white;
+        border: none;
+        padding: 15px 20px ;
+        font-size: medium;
+        border-radius: 50px;
+        margin-right: 15px;
+        cursor: pointer;
+      }
+      button:hover{
+      background-color: rgb(255, 119, 28);
+      }
+
+    </style>
   </head>
   <body>
-
-    <div class="top-btn">
-      <button onclick="
-          console.log(`Cart quantity : ${cartQuantity}`)
-        ">Show Quantity</button>
-
-      <button onclick="
-        cartQuantity += 1;
-        console.log('Added 1 item...')
-      ">Add to Cart</button>
-
-      <button onclick="
-        cartQuantity += 2;
-        console.log('Added 2 item...')
-      ">+2</button>
-
-      <button onclick="
-        cartQuantity += 3;
-        console.log('Added 3 item...')
-      ">+3</button>
-
-      <button onclick="
-        cartQuantity = 0;
-        console.log('Cart was Reset!')
-      ">Reset Cart</button>
-    </div>
-
-    <!-------------------------------------------------------------------------->
-
     <div class="bottom-btn" style="margin-top: 50px;">
       <button onclick="
           itemsQuantity += 1;
@@ -54,12 +42,9 @@
       <button onclick="
         console.log(`Item Quantity : ${itemsQuantity}`)
       ">Show Quantity</button>
-
-
     </div>
 
     <script>
-      let cartQuantity = 0;
       let itemsQuantity = 0;
 
       function decrease_item(){
