@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Play Game
+  </title>
+</head>
+<body>
+
+  <!--<p>Rock Paper Scissors</p>
+    <button onclick="
+      console.log(randomNumber());
+    ">Check</button>-->  
+
+    <div>
+      <button onclick="play('Rock')">Rock</button>
+      <button onclick="play('Paper')">Paper</button>
+      <button onclick="play('Scissors')">Scissors</button>
+    </div>
+
+    <div style="margin-top: 40px;">
+
+      <button onclick="
+        console.log(`Win : ${count.win} | Tie : ${count.tie} | Lose : ${count.lose}`)  
+      ">Check win count</button>
+
+      <button onclick="
+        count.win = 0;
+        count.tie = 0;
+        count.lose = 0;
+        console.log('Win Count was reseted!')
+      ">Reset</button>
+    </div>
+
+  <script>
+    
+    let count = JSON.parse(localStorage.getItem('count'));
+    
+    let str = '';
+
+    function randomNumber() {
+      const rnum = Math.random();
+      if (0 <= rnum && rnum <= 0.33){
+         str = 'Rock';
+      } else if (0.33 < rnum && rnum <= 0.66){
+         str = 'Paper';
+      } else {
+         str = 'Scissors';
+      }
+    }
+
+    function play(name) {
+      if (name === 'Rock'){
+        randomNumber()
+          if (str === 'Rock') {
+            console.log('Tie!');
+            count.tie += 1;
+          } else if (str === 'Scissors') {
+            console.log('You Won!');
+            count.win += 1;
+          } else {
+            console.log(`Lose! Computer raise ${str} you choose Rock.`);
+            count.lose += 1;
+          }
+          
+      } else if (name === 'Paper'){
+        randomNumber()
+        if (str === 'Paper') {
+          console.log('Tie!');
+          count.tie += 1;
+        } else if (str === 'Rock') {
+          console.log('You Won!');
+          count.win += 1;
+        } else {
+          console.log(`Lose! Computer raise ${str} you choose Rock.`);
+          count.lose += 1;
+        }
+      } else {
+        randomNumber()
+        if (str === 'Scissors') {
+          console.log('Tie!');
+          count.tie += 1;
+        } else if (str === 'Paper') {
+          console.log('You Won!');
+          count.win += 1;
+        } else {
+          console.log(`Lose! Computer raise ${str} you choose Rock.`);
+          count.lose += 1;
+        }
+      }
+
+      localStorage.setItem('count', JSON.stringify(count));
+
+    }
+  </script>
+</body>
+</html>
