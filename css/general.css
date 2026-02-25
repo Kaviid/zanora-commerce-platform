@@ -3,11 +3,12 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Manrope', sans-serif;
+    
 }
 
 .container{
-    padding-left: 150px;
-    padding-right: 150px;
+    width: 1152px;
     min-width: 800px;
+    margin: auto;
 }
 
