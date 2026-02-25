@@ -1,0 +1,14 @@
+*{
+    background-color: #F8F9FA;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Manrope', sans-serif;
+    
+}
+
+.container{
+    width: 1152px;
+    min-width: 800px;
+    margin: auto;
+}
+
