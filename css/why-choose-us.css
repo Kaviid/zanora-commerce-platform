@@ -53,10 +53,14 @@
 
 .main-box .right-side h2{
   font-size: 18px;
+  font-weight: 600;
   background-color: transparent;
+  margin-bottom: 2px;
 }
 
 .main-box .right-side p{
+  color: #3f3f3f;
   font-size: 12px;
+  font-weight: 400;
   background-color: transparent;
 }
