@@ -1,0 +1,121 @@
+.item-today-super-deals {
+  width: 270px;
+  height: 504px;
+  background-color: white;
+  border: 1px;
+  border-style: solid;
+  border-color: #FF9452;
+  border-radius: 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-today-super-deals .inner {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background-color: transparent;
+  gap: 12px;
+}
+
+
+.item-today-super-deals .inner img{
+  width: 232px;
+  border-radius: 24px;
+  background-color: transparent;
+}
+
+.item-today-super-deals .inner .middle{
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.item-today-super-deals .inner h3{
+  font-size: 17px;
+  font-weight: 600;
+  background-color: transparent;
+}
+
+.item-today-super-deals .inner p{
+  width: 200px;
+  font-size: 10px;
+  color: rgb(63, 63, 63);
+  background-color: transparent;
+}
+
+.item-today-super-deals .rating {
+  background-color: transparent;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.item-today-super-deals .inner .rating img{
+  width: 85px;
+  background-color: transparent;
+  padding-right: 5px;
+}
+
+.item-today-super-deals .inner .rating span{
+  font-size: 11px;
+  color: rgb(145, 145, 145);
+  background-color: transparent;
+}
+
+
+
+.item-today-super-deals .price-with-dis-price{
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  align-items: center;
+  justify-content: start;
+}
+
+.item-today-super-deals .price-with-dis-price span{
+  font-size: 15px;
+  color: #07C730;
+  font-weight: 500;
+  background-color: transparent;
+  padding-right: 10px;
+}
+
+.item-today-super-deals .price-with-dis-price .dis-price {
+  font-size: 10px;
+  color: rgb(112, 112, 112);
+  background-color: transparent;
+
+}
+
+.item-today-super-deals .add-to-cart-button {
+
+  background-color: #FF9452;
+  width: 130px;
+  height: 39px;
+  border-radius: 28px;
+  border: none;
+}
+
+.item-today-super-deals .add-to-cart-button .b-element {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.item-today-super-deals .add-to-cart-button .b-element span{
+  background-color: transparent;
+  font-size: 13px;
+  color: white;
+}
+
+.item-today-super-deals .add-to-cart-button img{
+  width: 20px;
+  background-color: transparent;
+}
