@@ -217,4 +217,148 @@ const products = [
         stock: 27
     },
     //===========================================================================================================================================
+    {
+        id: 3,
+        short_title: "Handmade Birthstone Name Necklace",
+        title: "Handmade Birthstone Name Necklace, Personalized Name Necklace, Necklace with Birthstone, Christmas Gift for Her, Women Gift for Wedding",
+        dis_price: 17.07,
+        original_price: 34.13,
+        image: [
+            "products-resorces/3/1.jpg",
+            "products-resorces/3/2.jpg",
+            "products-resorces/3/3.jpg",
+            "products-resorces/3/4.jpg",
+            "products-resorces/3/5.jpg"],
+        rating: 4.8,
+        reviews: [
+            {
+                name: "sara falk",
+                rating: 4,
+                comment: "Less quality and expected but a very good necklace for my daughter. Took some tome to be delivered but they fixed it directly when i reached out. Absolutely gorgeous name necklace exactly as described .",
+                date: "2026-03-13"   
+            },
+            {
+                name: "Kim",
+                rating: 5,
+                comment: "beautiful!! just as described and the perfect personalized gift",
+                date: "2026-03-06"   
+            },
+            {
+                name: "Lilli Hampson",
+                rating: 5,
+                comment: "Necklace came on time and was exactly what I was looking for, it’s really beautiful :)",
+                date: "2026-03-05"   
+            },
+            {
+                name: "Christine",
+                rating: 4,
+                comment: "Thank you my daughter love it for her birthday gift.",
+                date: "2026-03-04"   
+            },
+            {
+                name: "Paula",
+                rating: 5,
+                comment: "Absolutely beautiful, excellent quality and a fabulous gift. 💝",
+                date: "2026-02-23"   
+            },
+            {
+                name: "Julie",
+                rating: 3,
+                comment: "Stone is not very bright, but very pretty item",
+                date: "2026-02-15"   
+            },
+            {
+                name: "tmsvrcek",
+                rating: 5,
+                comment: "Great product. Liked it a lot",
+                date: "2026-02-05"   
+            }
+        ],
+        category: "Jewelry", 
+        description: `✨ Personalized Birthstone Name Necklace
+
+                        Add a personal touch with this beautiful personalized name necklace with a sparkling birthstone. Each piece is carefully handcrafted to display a name or meaningful word.
+
+                        💖 A perfect gift for birthdays, anniversaries, weddings, or special occasions.
+
+                        💎 Details
+                        • Handmade with care
+                        • Height: 1 - 1.5 cm
+                        • Width: 2 - 4 cm (depends on name length)
+                        • Material: Copper
+                        • Optional upgrade to 925 Sterling Silver`,
+        stock: 34
+    },
+    //===========================================================================================================================================
+    {
+        id: 4,
+        short_title: "Iridescent Shell Love Heart Necklace",
+        title: "Iridescent Shell Love Heart Necklace, Pearlescent Inlay Pendant, Mother's Day Gift for Mom, Easter Jewelry",
+        dis_price: 67.97,
+        original_price: 97.11,
+        image: [
+            "products-resorces/4/1.jpg",
+            "products-resorces/4/2.jpg",
+            "products-resorces/4/3.jpg",
+            "products-resorces/4/4.jpg"],
+        rating: 4.8,
+        reviews: [
+            {
+                name: "sara falk",
+                rating: 4,
+                comment: "Less quality and expected but a very good necklace for my daughter. Took some tome to be delivered but they fixed it directly when i reached out. Absolutely gorgeous name necklace exactly as described .",
+                date: "2026-03-13"   
+            },
+            {
+                name: "Kim",
+                rating: 5,
+                comment: "beautiful!! just as described and the perfect personalized gift",
+                date: "2026-03-06"   
+            },
+            {
+                name: "Lilli Hampson",
+                rating: 5,
+                comment: "Necklace came on time and was exactly what I was looking for, it’s really beautiful :)",
+                date: "2026-03-05"   
+            },
+            {
+                name: "Christine",
+                rating: 4,
+                comment: "Thank you my daughter love it for her birthday gift.",
+                date: "2026-03-04"   
+            },
+            {
+                name: "Paula",
+                rating: 5,
+                comment: "Absolutely beautiful, excellent quality and a fabulous gift. 💝",
+                date: "2026-02-23"   
+            },
+            {
+                name: "Julie",
+                rating: 3,
+                comment: "Stone is not very bright, but very pretty item",
+                date: "2026-02-15"   
+            },
+            {
+                name: "tmsvrcek",
+                rating: 5,
+                comment: "Great product. Liked it a lot",
+                date: "2026-02-05"   
+            }
+        ],
+        category: "Jewelry", 
+        description: `✨ Personalized Birthstone Name Necklace
+
+                        Add a personal touch with this beautiful personalized name necklace with a sparkling birthstone. Each piece is carefully handcrafted to display a name or meaningful word.
+
+                        💖 A perfect gift for birthdays, anniversaries, weddings, or special occasions.
+
+                        💎 Details
+                        • Handmade with care
+                        • Height: 1 - 1.5 cm
+                        • Width: 2 - 4 cm (depends on name length)
+                        • Material: Copper
+                        • Optional upgrade to 925 Sterling Silver`,
+        stock: 34
+    },
 ]

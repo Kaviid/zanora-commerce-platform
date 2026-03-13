@@ -1,6 +1,6 @@
 const container = document.getElementById("today-super-deals");
 
-const scrollProducts = products.slice(0,2);
+const scrollProducts = products.slice(0,5);
 
 scrollProducts.forEach(item => {
   const card = document.createElement("div");
@@ -26,11 +26,8 @@ scrollProducts.forEach(item => {
             </div>
             
             <button class="add-to-cart-button">
-              <div class="b-element">
-                <img src="icons/shopping-cart.png">
+                <img src="icons/shopping-cart-for-add-to-cart.png">
                 <span>Add to Cart</span>
-              </div>
-
             </button>
           </div>
         </div>

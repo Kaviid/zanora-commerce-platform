@@ -101,30 +101,36 @@
 }
 
 .item-today-super-deals .add-to-cart-button {
-
   background-color: #FF9452;
-  width: 130px;
-  height: 39px;
+
   border-radius: 28px;
   border: none;
-}
 
-.item-today-super-deals .add-to-cart-button .b-element {
-  background-color: transparent;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding: 10px 15px;
   gap: 5px;
 }
 
-.item-today-super-deals .add-to-cart-button .b-element span{
+.item-today-super-deals .add-to-cart-button span{
   background-color: transparent;
   font-size: 13px;
+  font-weight: 500;
   color: white;
 }
 
 .item-today-super-deals .add-to-cart-button img{
-  width: 20px;
+  width: 25px;
   background-color: transparent;
+}
+
+.add-to-cart-button:hover{
+  background-color: #ff7d2c;
+  cursor: pointer;
+}
+
+.item-today-super-deals:hover{
+  transform: translateY(-5px);   /* moves up */
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);  /* soft shadow */
 }
