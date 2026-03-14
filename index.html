@@ -9,12 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/home-page/header.css">
     <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/her-section.css">
-    <link rel="stylesheet" href="css/browser-by-category.css">
-    <link rel="stylesheet" href="css/why-choose-us.css">
-    <link rel="stylesheet" href="css/today-super-deals-scrolling.css">
+    <link rel="stylesheet" href="css/home-page/her-section.css">
+    <link rel="stylesheet" href="css/home-page/browser-by-category.css">
+    <link rel="stylesheet" href="css/home-page/why-choose-us.css">
+    <link rel="stylesheet" href="css/home-page/today-super-deals-scrolling.css">
   </head>
 
   <body>
@@ -106,9 +106,18 @@
         <div class="hero-right-side"></div>
       </div>
 
-      <div class="super-deals-scrolling" id="today-super-deals">
-
+      <!---Horizontal scroll carts sections-->
+      <div class="scroll-entire-container">
+        <h1 class="super-deals-scrolling-topic">Today Super Deals</h1>
+        <div class="super-deals-scrolling" id="today-super-deals-infinite-scroll">
+          <div class="fade fade-left"></div>
+          <div class="infinite-scroll-items" id="infinite-scroll-items">
+            <!---JS import cart to here-->
+          </div>
+          <div class="fade fade-right"></div>
       </div>
+      </div>
+
 
       <div class="browser-by-categories">
         <h1 class="browser-by-categories-topic">Browser by Categories</h1>

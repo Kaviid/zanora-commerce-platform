@@ -1,11 +1,68 @@
-.super-deals-scrolling{
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
-  margin-top: 60px;
+.scroll-entire-container{
+  margin-top: 75px;
 }
 
+.super-deals-scrolling-topic{
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
 
+.super-deals-scrolling{
+  overflow: hidden;
+  height: 550px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 100vw;          /* full viewport width */
+  margin-left: calc(50% - 50vw);
+
+  position: relative;
+}
+
+/* fade elements */
+.fade-left,
+.fade-right{
+  position: absolute;
+  top: 0;
+  width: 30px;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* left fade */
+.fade-left{
+  left: 0;
+  background: linear-gradient(to right, #F8F9FA 0%, transparent 100%);
+}
+
+/* right fade */
+.fade-right{
+  right: 0;
+  background: linear-gradient(to left, #F8F9FA 0%, transparent 100%);
+}
+
+.infinite-scroll-items{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  animation: scroll 30s linear infinite;
+}
+
+.infinite-scroll-items:hover{
+  animation-play-state: paused;
+}
+
+@keyframes scroll{
+  from{
+    transform: translateX(0);
+  }
+
+  to{
+    transform: translateX(-50%);
+  }
+}
 
 .item-today-super-deals {
   width: 270px;
