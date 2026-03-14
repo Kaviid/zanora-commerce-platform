@@ -302,50 +302,7 @@ const products = [
             "products-resorces/4/3.jpg",
             "products-resorces/4/4.jpg"],
         rating: 4.8,
-        reviews: [
-            {
-                name: "sara falk",
-                rating: 4,
-                comment: "Less quality and expected but a very good necklace for my daughter. Took some tome to be delivered but they fixed it directly when i reached out. Absolutely gorgeous name necklace exactly as described .",
-                date: "2026-03-13"   
-            },
-            {
-                name: "Kim",
-                rating: 5,
-                comment: "beautiful!! just as described and the perfect personalized gift",
-                date: "2026-03-06"   
-            },
-            {
-                name: "Lilli Hampson",
-                rating: 5,
-                comment: "Necklace came on time and was exactly what I was looking for, it’s really beautiful :)",
-                date: "2026-03-05"   
-            },
-            {
-                name: "Christine",
-                rating: 4,
-                comment: "Thank you my daughter love it for her birthday gift.",
-                date: "2026-03-04"   
-            },
-            {
-                name: "Paula",
-                rating: 5,
-                comment: "Absolutely beautiful, excellent quality and a fabulous gift. 💝",
-                date: "2026-02-23"   
-            },
-            {
-                name: "Julie",
-                rating: 3,
-                comment: "Stone is not very bright, but very pretty item",
-                date: "2026-02-15"   
-            },
-            {
-                name: "tmsvrcek",
-                rating: 5,
-                comment: "Great product. Liked it a lot",
-                date: "2026-02-05"   
-            }
-        ],
+        reviews: [],
         category: "Jewelry", 
         description: `✨ Personalized Birthstone Name Necklace
 
@@ -361,4 +318,193 @@ const products = [
                         • Optional upgrade to 925 Sterling Silver`,
         stock: 34
     },
+    //========================================================================================================================================
+    {
+        id: 5,
+        short_title: "Turquoise Necklace with White & Pink Coral",
+        title: "Turquoise Necklace with White & Pink Coral, Statement Collar Jewelry, Gifts for Her",
+        dis_price: 97.65,
+        original_price: 139.50,
+        image: [
+            "products-resorces/5/1.jpg",
+            "products-resorces/5/2.jpg",
+            "products-resorces/5/3.jpg",
+            "products-resorces/5/4.jpg",
+            "products-resorces/5/5.jpg",
+            "products-resorces/5/6.jpg"],
+        rating: 4.9,
+        reviews: [
+            {
+                name: "Susan Ambrose",
+                rating: 5,
+                comment: "Lovely piece and great price. Many lovely pieces! Very nice to deal and Will keep eyeing her shop.",
+                date: "2026-02-01"   
+            },
+            {
+                name: "Joni Daemen",
+                rating: 5,
+                comment: "I love this necklace so much!",
+                date: "2026-01-13"   
+            },
+            {
+                name: "Dan sullivan",
+                rating: 5,
+                comment: "Product looked nice and shipped timely",
+                date: "2026-01-08"   
+            },
+            {
+                name: "Erin Wickman",
+                rating: 5,
+                comment: "Loved it! Highly recommend it and the seller. She tweaked the length for me. PS I think this is my fourth piece from her.",
+                date: "2026-01-05"   
+            },
+            {
+                name: "Maggie",
+                rating: 4,
+                comment: "It is a beautiful necklace but not gold or silver clasp and it gave me a rash.",
+                date: "2025-12-23"   
+            },
+            {
+                name: "kim castle",
+                rating: 5,
+                comment: "Another delightfully , pretty necklace fashioned by this talented lady. I am now the proud owner of several of her creations and all are beautifully different. All are despatched well wrapped and all come with a small gift...splendid! What next?",
+                date: "2025-12-18"   
+            },
+            {
+                name: "Ellen",
+                rating: 4,
+                comment: "Nice gift to give Nice gift to give",
+                date: "2025-12-11"   
+            },
+            {
+                name: "Sylvain DAUBAS",
+                rating: 5,
+                comment: "Beautiful product, even more beautiful than in the photos, very satisfied.",
+                date: "2025-12-11"   
+            },
+        ],
+        category: "Jewelry", 
+        description: `
+                    ✨ Turquoise & Coral Beaded Necklace
+
+                    This elegant necklace features a beautiful mix of turquoise, white coral, and pink coral beads, creating a soft collar-style design. The refreshing turquoise tones, pure white coral, and warm pink coral come together to create a fresh and timeless look inspired by the colors of the sea. 🌊💕
+
+                    Turquoise is often associated with positive energy, calmness, and confidence, while coral symbolizes vitality, warmth, and emotional balance. Together they create a meaningful and stylish handmade jewelry piece.
+
+                    Perfect for everyday wear, summer outfits, or special occasions.🌸
+
+                    💎 Details
+                    • Natural turquoise, white coral, and pink coral beads
+                    • Necklace length: 42 cm (16.5 in) + 5 cm (2 in) extension chain
+                    • Handmade with care
+
+                    🌿 Note
+                    Because natural stones are used, slight variations in color and shape may occur.
+
+                    🎁 Packaging
+                    Your necklace comes in a beautiful gift box, ready for gifting.
+
+                    ✨ Jewelry Care
+                    • Avoid water, perfume, and lotions
+                    • Store in a dry place
+                    • Clean gently with a soft cloth
+                `,
+        stock: 11
+    },
+    //===========================================================================================================================================
+    {
+        id: 6,
+        short_title: "2118-Vintage Texture 18K Gold Vermeil Ring",
+        title: "2118-Vintage Texture 18K Gold Vermeil Ring - Patterned Band (2.8mm Width)",
+        dis_price: 20.00,
+        original_price: 40.00,
+        image: [
+            "products-resorces/6/1.jpg",
+            "products-resorces/6/2.jpg",
+            "products-resorces/6/3.jpg"],
+        rating: 4.3,
+        reviews: [
+            {
+                name: "kamilah burns",
+                comment: "I’m so glad I chose to get this ring. It’s really pretty.",
+                date: "2026-03-12"   
+            },
+            {
+                name: "dawnsj",
+                comment: "Good quality. Really beautiful piece & just the right size. I would definitely purchase from this seller again.",
+                date: "2026-03-11"   
+            },
+            {
+                name: "Saba Nawaz",
+                comment: "Have been wearing this off and on for 2 months. Love it so much, perfect for the minimalist who likes a little uniqueness. Have worn it in water multiple times without issues",
+                date: "2026-03-08"   
+            },
+            {
+                name: "Selena McAllister",
+                comment: "Love it! The ring is so intricate and arrived fast.",
+                date: "2026-03-02"   
+            },
+            {
+                name: "hlcappelli1",
+                comment: "Very cute ring. Arrived quickly, good quality, exactly as pictured!",
+                date: "2026-03-01"   
+            },
+            {
+                name: "lizlkahts1",
+                comment: "Well made ring! As described! Would highly recommend & get another!",
+                date: "2026-02-18"   
+            },
+            {
+                name: "MARCEL GUSTAV ROBATTO",
+                comment: "AS DESCRIBED GOOD VALUE FAST SHIPPING",
+                date: "2025-02-11"   
+            },
+            {
+                name: "Mary K Porath",
+                comment: "Fantastic quality that matched the description. Arrived on time and met expectations",
+                date: "2025-02-11"   
+            },
+            {
+                name: "noelle sansaricq",
+                comment: "Beautiful dainty ring. It arrived exactly on time.",
+                date: "2025-01-23"   
+            },
+            {
+                name: "Aurore Gautier",
+                comment: "The ring is very beautiful but Unfortunately, it's too small.",
+                date: "2025-12-18"   
+            },
+            {
+                name: "Catherine Flaherty",
+                comment: "Cheap material, looks nothing like the photo, definitely not made of gold or silver",
+                date: "2025-12-11"   
+            },
+            {
+                name: "Austayziah",
+                comment: "Bronze color, didn’t match the rest of my jewelry and I have a mix of plated and gold filled",
+                date: "2025-12-11"   
+            },
+        ],
+        category: "Jewelry", 
+        description: `
+                ✨ Product Details
+
+                • Material: Sterling Silver, 18K Gold Vermeil (gold plated over sterling silver)
+                • Width: 2.8 mm
+                • Thickness: 1.4 mm
+
+                ⚡ Processing Time
+                Orders are prepared and shipped within 1–3 business days from Sri Lanka.
+                `,
+        stock: 27
+    },
+    //===========================================================================================================================================
+    {
+
+    },
+    //===========================================================================================================================================
+    {
+
+    },
+    //===========================================================================================================================================
 ]

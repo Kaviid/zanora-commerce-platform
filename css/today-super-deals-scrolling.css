@@ -19,6 +19,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .item-today-super-deals .inner {
@@ -94,7 +95,7 @@
 }
 
 .item-today-super-deals .price-with-dis-price .dis-price {
-  font-size: 10px;
+  font-size: 12px;
   color: rgb(112, 112, 112);
   background-color: transparent;
 

@@ -1,6 +1,6 @@
 const container = document.getElementById("today-super-deals");
 
-const scrollProducts = products.slice(0,5);
+const scrollProducts = products.slice(0,4);
 
 scrollProducts.forEach(item => {
   const card = document.createElement("div");
