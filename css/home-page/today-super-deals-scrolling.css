@@ -14,7 +14,7 @@
   display: flex;
   align-items: center;
   gap: 30px;
-  width: 100vw;          /* full viewport width */
+  width: 99vw;          /* full viewport width */
   margin-left: calc(50% - 50vw);
 
   position: relative;

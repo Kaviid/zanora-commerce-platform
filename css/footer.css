@@ -1,0 +1,279 @@
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #FF9452;
+  width: 1152px;
+
+  padding-top: 19px;
+  padding-bottom: 36px;
+  padding-left: 19px;
+  padding-right: 19px;
+
+  background-color: #ffe8d9;
+  border-radius: 48px;
+
+  margin: 0 auto; /* This centers footer */
+  margin-top: 60px;
+
+  gap: 32px;
+
+  margin-bottom: 10px;
+}
+
+.inner-top{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+
+  width: 100%;
+  border: 1px solid #FF9452;
+  border-radius: 34px;
+  padding-bottom: 51px;
+  padding-top: 51px;
+}
+
+.subscribe-title{
+  font-size: 35px;
+  font-weight: 400;
+  width: 505px;
+  text-align: center;
+}
+
+.subscribe-description{
+  font-size: 13px;
+  font-weight: 200;
+  width: 421px;
+  text-align: center;
+  color: gray;
+}
+
+.subscribe-entire-bar{
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  margin: opx;
+  width: 682px;
+  justify-content: space-between;
+
+  border: 1px solid #FF9452;
+
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 7px;
+  padding-left: 30px;
+  border-radius: 50px;
+}
+
+.subscribe-button{
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: #FF9452;
+
+  border: none;
+  padding: 15px 34px;
+  border-radius: 39px;
+}
+
+.subscribe-button:hover{
+  background-color: #ff7d2c;
+  cursor: pointer;
+}
+
+.email-enter-section{
+  font-size: 18px;
+  border: none;
+  width: 500px;
+}
+
+.email-enter-section:focus{
+  outline: none;
+  box-shadow: none;
+}
+
+/*Bottom div style ==============================================*/
+/*Top*/
+.inner-bottom{
+  display: flex;
+  flex-direction: column;
+  width: 1152px;
+  background-color: transparent;
+
+
+
+  gap: 42px;
+}
+/*1*/
+.inner-bottom a{
+  background-color: transparent;
+}
+
+.inner-bottom .top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: transparent;
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.inner-bottom .top .one{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 31px;
+  background-color: transparent;
+}
+
+.inner-bottom .top .one .logo {
+  width: 130px;
+  background-color: transparent;
+}
+
+.inner-bottom .top .one .socials{
+  display: flex;
+  flex-direction: row;
+  gap: 22px;
+  background-color: transparent;
+}
+
+.inner-bottom .top .one .socials-logos{
+  width: 30px;
+  background-color: transparent;
+}
+
+/*2*/
+.inner-bottom .top .two{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background-color: transparent;
+}
+
+.inner-bottom .top .two div{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: transparent;
+}
+
+.inner-bottom .top .two h3{
+  font-size: 19px;
+  font-weight: 500;
+  background-color: transparent;
+}
+
+.inner-bottom .top .two a{
+  color: gray;
+  width: 90px;
+  font-size: 14px;
+}
+
+/*3*/
+.inner-bottom .top .three{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background-color: transparent;
+}
+
+.inner-bottom .top .three div{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: transparent;
+}
+
+.inner-bottom .top .three h3{
+  font-size: 19px;
+  font-weight: 500;
+  width: 160px;
+  background-color: transparent;
+}
+
+.inner-bottom .top .three a{
+  color: gray;
+  width: 90px;
+  font-size: 14px;
+  background-color: transparent;
+}
+
+/*4*/
+.inner-bottom .top .four{
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+}
+
+.inner-bottom .top .four .payment-methods-icons{
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  background-color: transparent;
+}
+
+.inner-bottom .top .four h3{
+  font-size: 19px;
+  font-weight: 500;
+  width: 160px;
+  background-color: transparent;
+}
+
+.inner-bottom .top .four .payment-methods-icons .methods{
+  background-color: transparent;
+}
+
+.inner-bottom .top .four .payment-methods-icons .visa img{
+  width: 38px;
+} 
+
+.inner-bottom .top .four .payment-methods-icons .paypal img{
+  width: 39px;
+} 
+
+.inner-bottom .top .four .payment-methods-icons .payoneer img{
+  width: 80px;
+} 
+
+.inner-bottom .top .four .payment-methods-icons .master img{
+  width: 47px;
+} 
+
+.inner-bottom .top .four .payment-methods-icons .bitcoin img{
+  width: 30px;
+} 
+
+/*Bottom*/
+
+.inner-bottom .bottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: transparent;
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.inner-bottom .bottom span{
+  font-size: 15px;
+  color: gray;
+  background-color: transparent;
+}
+
+.inner-bottom .bottom .right-coner{
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  background-color: transparent;
+}
+
+.inner-bottom .bottom .right-coner a{
+  font-size: 15px ;
+  background-color: transparent;
+}
