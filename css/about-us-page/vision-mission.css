@@ -1,0 +1,45 @@
+.vision-and-mission {
+  display: flex;
+  flex-direction: row;
+  gap: 124px;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid #FF9452;
+  border-radius: 43px;
+  width: 1152px;
+  margin-top: 60px;
+  padding: 40px 0px;
+}
+
+.vision-and-mission .both{
+  width: 465px;
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+}
+
+.vision-and-mission .mission{
+  width: 445px;
+}
+
+.vision-and-mission .both .top{
+  display: flex;
+  flex-direction: row;
+  gap: 26px;
+}
+
+.vision-and-mission .both .top img {
+  width: 33px;
+}
+
+.vision-and-mission .both .top p{
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.vision-and-mission .both .para {
+  font-size: 16px;
+  color: gray;
+  line-height: 28px;
+}
