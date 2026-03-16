@@ -1,0 +1,255 @@
+/*Main style*/
+.hero{
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 56px;
+}
+
+.right{
+  width: 564px;
+}
+
+.right .top {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+/*1st section in Right*/
+
+.right .top .title-and-stars {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 4px;
+}
+
+.right .top .title-and-stars h1{
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.right .top .title-and-stars .top-stars{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.right .top .title-and-stars .top-stars p{
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.right .top .title-and-stars .top-stars img{
+  width: 94px;
+}
+
+/*2nd section in Right*/
+
+.right .top .price-and-select-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.right .top .price-and-select-section .price-return{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 7px;
+}
+
+.right .top .price-and-select-section .price-return .orginal-discount{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 27px;
+}
+
+.right .top .price-and-select-section .price-return .orginal-discount .dis{
+  font-size: 27px;
+  font-weight: 600;
+  color: #07C730;
+}
+
+.right .top .price-and-select-section .price-return .orginal-discount .ori{
+  font-size: 16px;
+  font-weight: 500;
+  color: #8B8B8B;
+  text-decoration: line-through;
+}
+
+.right .top .price-and-select-section .price-return .return-text{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.right .top .price-and-select-section .price-return .return-text img{
+  width: 20px;
+}
+
+.right .top .price-and-select-section .price-return .return-text p{
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.right .top .price-and-select-section .size-quantity{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 25px;
+}
+
+.right .top .price-and-select-section .size-quantity .size-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 18px;
+}
+
+.right .top .price-and-select-section .size-quantity .size-container p{
+  font-size: 17px;
+  font-weight: 500;
+}
+
+
+.right .top .price-and-select-section .size-quantity .size-container .dropdown p{
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.right .top .price-and-select-section .size-quantity .size-container .dropdown img{
+  width: 13px;
+}
+
+.right .top .price-and-select-section .size-quantity .quantity-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 18px;
+}
+
+.right .top .price-and-select-section .size-quantity .quantity-container p{
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.right .top .price-and-select-section .size-quantity .quantity-container .inc-decre{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 28px;
+
+  border: 2px solid #FF9452;
+  border-radius: 30px;
+  padding: 10px 30px;
+}
+
+.right .top .price-and-select-section .size-quantity .quantity-container .inc-decre .sign{
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.right .top .price-and-select-section .size-quantity .quantity-container .inc-decre .value{
+  font-size: 18px;
+  font-weight: 300;
+}
+
+/*3rd section in Right*/
+.right .top .add-cart-and-available{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+.right .top .add-cart-and-available p{
+  font-size: 14px;
+  font-weight: 500;
+  color: #FE5356;
+}
+
+.right .top .add-cart-and-available button {
+  background-color: #FF9452;
+
+  border-radius: 28px;
+  border: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 100px;
+  gap: 10px;
+}
+
+.right .top .add-cart-and-available button span{
+  background-color: transparent;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+}
+
+.right .top .add-cart-and-available button img{
+  width: 25px;
+  background-color: transparent;
+}
+
+.right .top .add-cart-and-available button:hover{
+  background-color: #ff7d2c;
+  cursor: pointer;
+}
+
+/*Payment methods section*/
+
+.right .down{
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  gap: 10px;
+}
+
+.right .down .payment-methods-icons{
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  background-color: transparent;
+  
+}
+
+.right .down h3{
+  font-size: 17px;
+  font-weight: 500;
+
+  background-color: transparent;
+}
+
+.right .down .payment-methods-icons .methods{
+  background-color: transparent;
+}
+
+.right .down .payment-methods-icons .visa img{
+  width: 38px;
+} 
+
+.right .down .payment-methods-icons .paypal img{
+  width: 39px;
+} 
+
+.right .down .payment-methods-icons .payoneer img{
+  width: 80px;
+} 
+
+.right .down .payment-methods-icons .master img{
+  width: 47px;
+} 
+
+.right .down .payment-methods-icons .bitcoin img{
+  width: 30px;
+} 

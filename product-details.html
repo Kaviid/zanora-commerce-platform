@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/product-details-page/image-slider.css">
+    <link rel="stylesheet" href="css/product-details-page/product-main-details-right.css">
+    <link rel="stylesheet" href="css/product-details-page/dropdown.css">
   </head>
   <body>
     <div class="container"> <!-- Container -->
@@ -77,78 +79,107 @@
         </div>
       </header> <!-- Header end-->
 
-      <div class="product-gallery">
+      <div class="hero">
 
-          <div class="main-image"> <!-- Main image -->
-            <!-- <button class="prev"><img src="icons/left-arrow.png"></button> -->
+        <div class="product-gallery">
+
+            <div class="main-image"> <!-- Main image -->
+              <!-- <button class="prev"><img src="icons/left-arrow.png"></button> -->
+              
+              <img id="mainImage" src="products-resorces/4/1.jpg">
+              <!-- <button class="next"><img src="icons/right-arrow.png"></button> -->
+              
+            </div>
             
-            <img id="mainImage" src="products-resorces/4/1.jpg">
-            <!-- <button class="next"><img src="icons/right-arrow.png"></button> -->
-            
+          <div class="thumbnails"> <!-- Thumbnails -->
+            <img src="products-resorces/4/1.jpg" class="thumb active">
+            <img src="products-resorces/4/2.jpg" class="thumb">
+            <img src="products-resorces/4/3.jpg" class="thumb">
+            <img src="products-resorces/4/4.jpg" class="thumb">
           </div>
-          
-        <div class="thumbnails"> <!-- Thumbnails -->
-          <img src="products-resorces/4/1.jpg" class="thumb active">
-          <img src="products-resorces/4/2.jpg" class="thumb">
-          <img src="products-resorces/4/3.jpg" class="thumb">
-          <img src="products-resorces/4/4.jpg" class="thumb">
         </div>
-      </div>
 
-      <div class="right">
-        <div class="top">
-          <div class="title-and-stars"> <!-- 1st -->
-            <h1>Iridescent Shell Love Heart Necklace, Pearlescent Inlay Pendant, Mother's Day Gift for Mom, Easter Jewelry</h1>
-            <div class="top-">
-              <p>Review for this item</p>
-              <img src="icons/Stars.png">
-            </div>stars
-          
-          </div>
+        <div class="right">
+          <div class="top">
+            <div class="title-and-stars"> <!-- 1st -->
+              <h1>Iridescent Shell Love Heart Necklace, Pearlescent Inlay Pendant, Mother's Day Gift for Mom, Easter Jewelry</h1>
+              <div class="top-stars">
+                <p>Review for this item</p>
+                <img src="icons/Stars.png">
+              </div>
+            
+            </div>
 
-          <div class="price-and-select-section"> <!-- 2nd -->
-            <div class="orginal-discount">
-              <p>USD 67.97</p>
-              <p>USD 97.11</p>
-            </div>
-            <div class="return-text">
-              <img src="icons/correct.png">
-              <p>Returns & exchanges accepted</p>
-            </div>
-            <div class="size-container">
-              <p>Size</p>
-              <div class="dropdown">
-                <p>Select an option</p>
-                <img src="icons/dropdown.png">
+            <div class="price-and-select-section"> <!-- 2nd -->
+              <div class="price-return">
+                <div class="orginal-discount">
+                  <p class="dis">USD 67.97</p>
+                  <p class="ori">USD 97.11</p>
+                </div>
+                <div class="return-text">
+                  <img src="icons/correct.png">
+                  <p>Returns & exchanges accepted</p>
+                </div>
+              </div>
+
+              <div class="size-quantity">
+                <div class="size-container">
+                  <p>Size</p>
+                  <div class="dropdown"> <!---css/dropdown.css--->
+                    <div class="select">
+                      <span class="selected">Select an option</span>
+                      <img src="icons/dropdown.png" class="caret">
+                    </div>
+                    <ul class="menu">
+                      <li>Small</li>
+                      <li>Medium</li>
+                      <li>Large</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="quantity-container">
+                  <p>Quantity</p>
+                  <div class="inc-decre">
+                    <p class="sign">-</p>
+                    <p class="value">1</p>
+                    <p class="sign">+</p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="quantity-container">
-              <p>Quantity</p>
-              <div class="inc-decre">
-                <p>-</p>
-                <p>1</p>
-                <p>+</p>
-              </div>
+
+            <div class="add-cart-and-available"> <!-- 3rd -->
+              <p>In available 34 peices</p>
+              <button>
+                <img src="icons/shopping-cart-for-add-to-cart.png">
+                <span>Add to Cart</span>
+              </button>
             </div>
           </div>
 
-          <div class="add-cart-and-available"> <!-- 3rd -->
-            <p>In available 34 peices</p>
-            <button>Add to cart</button>
-          </div>
-        </div>
-
-        <div class="down">
-          Pay with section
-        </div>
+          <div class="down"> <!---Pay with--->
+            <h3>Payment Methods</h3>
+            <div class="payment-methods-icons">
+              <a href="#" class="visa">
+                <img src="icons/visa.png" class="methods">
+              </a>
+              <a href="#" class="paypal">
+                <img src="icons/paypal.png" class="methods">
+              </a>
+              <a href="#" class="payoneer">
+                <img src="icons/payoneer.png" class="methods">
+              </a>
+              <a href="#" class="master">
+                <img src="icons/master.png" class="methods">
+              </a>
+              <a href="#" class="bitcoin">
+                <img src="icons/bitcoin.png" class="methods">
+              </a>
+            </div>
+          </div> <!---Pay with end--->
+        </div> 
       </div>
-
-
-
-
-
-
-
     </div> <!-- Container end -->
 
     <div class="footer"> <!-- Footer -->
@@ -234,5 +265,7 @@
 
 
     <script src="js/product-details-page/image-slider.js"></script>
+    <script src="js/product-details-page/dropdown.js"></script>
+    <script src="js/product-details-page/quantity.js"></script>
   </body>
 </html> 
