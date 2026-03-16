@@ -9,7 +9,7 @@ for(let i = 1; i <= 2; i++){
     card.innerHTML = `
           <div class = "item-today-super-deals">
             <div class="inner">
-              <img src="${item.image[0]}">
+              <a href = "product-details.html?id=${item.id}"><img src="${item.image[0]}"></a>
               <div class="middle">
                 <h3>Custom Toddler Backpack</h3>
                 <p>Custom Toddler Backpack, the perfect companion for your little one's 

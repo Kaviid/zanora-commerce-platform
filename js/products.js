@@ -278,18 +278,19 @@ const products = [
         rating: 4.8,
         reviews: [],
         category: "Jewelry", 
-        description: `✨ Personalized Birthstone Name Necklace
+        description: `
+        ✨ Personalized Birthstone Name Necklace
 
-                        Add a personal touch with this beautiful personalized name necklace with a sparkling birthstone. Each piece is carefully handcrafted to display a name or meaningful word.
+            Add a personal touch with this beautiful personalized name necklace with a sparkling birthstone. Each piece is carefully handcrafted to display a name or meaningful word.
 
-                        💖 A perfect gift for birthdays, anniversaries, weddings, or special occasions.
+            💖 A perfect gift for birthdays, anniversaries, weddings, or special occasions.
 
-                        💎 Details
-                        • Handmade with care
-                        • Height: 1 - 1.5 cm
-                        • Width: 2 - 4 cm (depends on name length)
-                        • Material: Copper
-                        • Optional upgrade to 925 Sterling Silver`,
+            💎 Details
+                • Handmade with care
+                • Height: 1 - 1.5 cm
+                • Width: 2 - 4 cm (depends on name length)
+                • Material: Copper
+                • Optional upgrade to 925 Sterling Silver`,
         stock: 34
     },
     //========================================================================================================================================
