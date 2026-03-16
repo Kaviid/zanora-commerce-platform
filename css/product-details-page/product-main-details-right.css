@@ -151,6 +151,11 @@
   padding: 10px 30px;
 }
 
+.right .top .price-and-select-section .size-quantity .quantity-container .inc-decre button{
+  border: none;
+  cursor: pointer;
+}
+
 .right .top .price-and-select-section .size-quantity .quantity-container .inc-decre .sign{
   font-size: 17px;
   font-weight: 300;
@@ -235,21 +240,21 @@
 }
 
 .right .down .payment-methods-icons .visa img{
-  width: 38px;
+  width: 33px;
 } 
 
 .right .down .payment-methods-icons .paypal img{
-  width: 39px;
+  width: 34px;
 } 
 
 .right .down .payment-methods-icons .payoneer img{
-  width: 80px;
+  width: 75px;
 } 
 
 .right .down .payment-methods-icons .master img{
-  width: 47px;
+  width: 42px;
 } 
 
 .right .down .payment-methods-icons .bitcoin img{
-  width: 30px;
+  width: 25px;
 } 

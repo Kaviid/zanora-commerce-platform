@@ -1,3 +1,4 @@
+import { products } from "../products.js";
 const container = document.getElementById("infinite-scroll-items");
 
 const scrollProducts = products.slice(0,7);
