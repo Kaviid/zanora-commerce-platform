@@ -9,11 +9,8 @@ export const products = [
         original_price: 34.99,
         image: [
             "products-resorces/1/1.jpg",
-            "products-resorces/1/2.jpg",
-            "products-resorces/1/3.jpg",
             "products-resorces/1/4.jpg",
             "products-resorces/1/5.jpg",
-            "products-resorces/1/6.jpg",
             "products-resorces/1/7.jpg",
             "products-resorces/1/8.jpg"],
 
@@ -113,11 +110,7 @@ export const products = [
             "products-resorces/2/5.jpg",
             "products-resorces/2/6.jpg",
             "products-resorces/2/7.jpg",
-            "products-resorces/2/8.jpg",
-            "products-resorces/2/9.jpg",
-            "products-resorces/2/10.jpg",
-            "products-resorces/2/11.jpg",
-            "products-resorces/2/12.jpg"],
+            "products-resorces/2/8.jpg"],
 
         rating: 5,
         reviews: [
@@ -265,7 +258,7 @@ export const products = [
             "products-resorces/4/2.jpg",
             "products-resorces/4/3.jpg",
             "products-resorces/4/4.jpg"],
-        rating: 4.8,
+        rating: 0,
         reviews: [],
         category: "Jewelry", 
         description: `
@@ -380,6 +373,12 @@ export const products = [
             "products-resorces/6/2.jpg",
             "products-resorces/6/3.jpg"],
         rating: 4.3,
+        size_label : "Sizes",
+        sizes: ["2.8 mm Width × 1.6 cm Diameter",
+                "2.8 mm Width × 1.7 cm Diameter",
+                "2.8 mm Width × 1.8 cm Diameter",
+                "2.8 mm Width × 1.9 cm Diameter",
+                "2.8 mm Width × 2.0 cm Diameter"],
         reviews: [
             {
                 name: "kamilah burns",

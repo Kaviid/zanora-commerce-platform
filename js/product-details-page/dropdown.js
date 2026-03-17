@@ -1,6 +1,10 @@
 export function dropdownElement() {
 
   const dropdown = document.querySelector(".dropdown");
+
+  // stop function if dropdown doesn't exist
+  if (!dropdown) return;
+
   const select = dropdown.querySelector(".select");
   const menu = dropdown.querySelector(".menu");
   const selected = dropdown.querySelector(".selected");

@@ -33,6 +33,24 @@ function renderReviews() {
   }).join("");
 }
 
+function checkDropdown(){
+  if (item.size_label){
+    const sizes = item.sizes.map(size => `<li>${size}</li>`).join("");
+    return    `
+                <p>${item.size_label}</p>
+              <div class="dropdown"> <!---css/dropdown.css--->
+                <div class="select">
+                  <span class="selected">Select an option</span>
+                  <img src="icons/dropdown.png" class="caret">
+                </div>
+                <ul class="menu">
+                  ${sizes}
+                </ul>
+              </div>
+            `;
+  } 
+  return ""; //return empty if no size available in selected product
+}
 
 details.innerHTML = `
 
@@ -47,9 +65,13 @@ details.innerHTML = `
                 
               </div>
               
-            <div class="thumbnails"> <!-- Thumbnails -->
-              ${thumbnailsHTML}
-            </div>
+              <div class="thumbnail-wrapper">
+                <button class="thumb-prev"><img src="icons/left-arrow.png"></button>
+                <div class="thumbnails"> <!-- Thumbnails -->
+                  ${thumbnailsHTML}
+                </div>
+                <button class="thumb-next"><img src="icons/right-arrow.png"></button>
+              </div>
           </div>
 
           <div class="right">
@@ -76,27 +98,17 @@ details.innerHTML = `
                 </div>
 
                 <div class="size-quantity">
-                  <div class="size-container">
-                    <p>Size</p>
-                    <div class="dropdown"> <!---css/dropdown.css--->
-                      <div class="select">
-                        <span class="selected">Select an option</span>
-                        <img src="icons/dropdown.png" class="caret">
-                      </div>
-                      <ul class="menu">
-                        <li>Small</li>
-                        <li>Medium</li>
-                        <li>Large</li>
-                      </ul>
-                    </div>
+
+                  <div id="size-container" class="size-container">
+                    ${checkDropdown()}
                   </div>
 
                   <div class="quantity-container">
                     <p>Quantity</p>
                     <div class="inc-decre">
-                      <button class="sign minus" onclick="decrease()">-</button>
+                      <button class="sign minus" ">-</button>
                       <p class="value" id="q-value">1</p>
-                      <button class="sign plus" onclick="increase()">+</button>
+                      <button class="sign plus" ">+</button>
                     </div>
                   </div>
                 </div>
@@ -156,6 +168,8 @@ details.innerHTML = `
 container.appendChild(details);
 
 initSlider();
+
 dropdownElement();
+
 document.querySelector(".plus").addEventListener("click", increase);
 document.querySelector(".minus").addEventListener("click", decrease);
