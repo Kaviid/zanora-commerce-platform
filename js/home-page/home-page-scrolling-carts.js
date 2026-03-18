@@ -3,7 +3,7 @@ const container = document.getElementById("infinite-scroll-items");
 
 const scrollProducts = products.slice(0,7);
 
-for(let i = 1; i <= 2; i++){
+for(let i = 1; i <= 2; i++){ //I use for loop cause I wanna duplicate that 7 elemnt for infinit scroll
   scrollProducts.forEach(item => {
     const card = document.createElement("div");
 
