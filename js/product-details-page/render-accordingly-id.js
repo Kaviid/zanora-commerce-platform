@@ -99,7 +99,7 @@ details.innerHTML = `
 
                 <div class="size-quantity">
 
-                  <div id="size-container" class="size-container">
+                  <div id="size-container" class="size-container" >
                     ${checkDropdown()}
                   </div>
 
