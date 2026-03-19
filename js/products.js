@@ -1,7 +1,7 @@
 // products.js
 // Temporary Product Database
 
-const products = [
+export const products = [
     {
         id: 1,
         title: "Custom Toddler Backpack",
@@ -9,11 +9,8 @@ const products = [
         original_price: 34.99,
         image: [
             "products-resorces/1/1.jpg",
-            "products-resorces/1/2.jpg",
-            "products-resorces/1/3.jpg",
             "products-resorces/1/4.jpg",
             "products-resorces/1/5.jpg",
-            "products-resorces/1/6.jpg",
             "products-resorces/1/7.jpg",
             "products-resorces/1/8.jpg"],
 
@@ -86,26 +83,16 @@ const products = [
             },
         ],
         category: "Bags",
-        description: `Custom Toddler Backpack, Personalized Backpacks With Name Gift, Name Children's School Bag for Girls Boys Kids Preschool Toddler Book Bag
-                    Size: Large 40cmx28cmx12cm
-                    Width: 11 inches
-                    Heigth: 16 inches
-                    Thickness: 5 inches
-
-                    Small:24x30x11cm
-                    Width: 10 inches
-                    Heigth: 12 inches
-                    Thickness: 5 inches
-                    🌺Custom Toddler Backpack, the perfect companion for your little one's preschool adventures! Designed with both style and functionality in mind, this Preschool Backpack is ideal for carrying books, snacks, and toys, making it a must-have for any child on the go.
-                    🌈The Toddler Book Bag features a spacious main compartment, easy-to-use zippers, and adjustable straps to ensure a comfortable fit for kids of all sizes. Personalize it with your child's name to create a unique and special School Bag for Kids that they'll love to show off!
-                    👔 Customizable with Name: Add your child's name to make this Children's Backpack truly one-of-a-kind. Perfect for personalization and easy identification at school or daycare.
-
-                    📚Durable and Lightweight: Made from high-quality, lightweight materials, this Kids Backpack is built to withstand the wear and tear of daily use while being easy for toddlers to carry.
-
-                    👍Comfortable Design: Adjustable shoulder straps and a padded back panel provide maximum comfort, making it easy for little ones to carry their belongings without strain.
-
-                    ☀️Adorable and Fun Designs: Available in a variety of colorful patterns and themes, this Toddler Backpack is sure to delight any child and make heading to school or outings more exciting.
-                    Custom Toddler Backpack** is the perfect blend of practicality and fun. Give your child a backpack they'll love and cherish!`,
+        description: `
+                This custom toddler backpack is a perfect personalized school bag for little kids 🎒. You 
+                can add your child’s name to make it unique and easy to recognize at preschool or daycare 
+                🧸. It is designed to carry books, snacks, toys, and other daily essentials, making it ideal 
+                for preschool, travel, or everyday use 📚. The backpack features a spacious main compartment, 
+                smooth zippers, adjustable shoulder straps, and a padded back panel for comfortable carrying 👍. 
+                Made from durable and lightweight materials, it is easy for toddlers to carry while still being strong 
+                enough for everyday use. It also comes in fun and colorful designs that kids will love 🌈. The available 
+                sizes are large 40×28×12 cm (16×11×5 inches) and small 24×30×11 cm (12×10×5 inches).
+            `,
         stock: 12
     },
     //===========================================================================================================================================
@@ -123,11 +110,7 @@ const products = [
             "products-resorces/2/5.jpg",
             "products-resorces/2/6.jpg",
             "products-resorces/2/7.jpg",
-            "products-resorces/2/8.jpg",
-            "products-resorces/2/9.jpg",
-            "products-resorces/2/10.jpg",
-            "products-resorces/2/11.jpg",
-            "products-resorces/2/12.jpg"],
+            "products-resorces/2/8.jpg"],
 
         rating: 5,
         reviews: [
@@ -275,7 +258,7 @@ const products = [
             "products-resorces/4/2.jpg",
             "products-resorces/4/3.jpg",
             "products-resorces/4/4.jpg"],
-        rating: 4.8,
+        rating: 0,
         reviews: [],
         category: "Jewelry", 
         description: `
@@ -390,6 +373,12 @@ const products = [
             "products-resorces/6/2.jpg",
             "products-resorces/6/3.jpg"],
         rating: 4.3,
+        size_label : "Sizes",
+        sizes: ["2.8 mm Width × 1.6 cm Diameter",
+                "2.8 mm Width × 1.7 cm Diameter",
+                "2.8 mm Width × 1.8 cm Diameter",
+                "2.8 mm Width × 1.9 cm Diameter",
+                "2.8 mm Width × 2.0 cm Diameter"],
         reviews: [
             {
                 name: "kamilah burns",
@@ -535,8 +524,4 @@ const products = [
         stock: 16
     },
     //===========================================================================================================================================
-    {
-
-    },
-    //===========================================================================================================================================
-]
+];
