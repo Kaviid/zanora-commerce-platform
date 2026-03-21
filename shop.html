@@ -54,11 +54,11 @@
             <button class="all-categories-btn">All Categories</button>
 
             <ul class="category-popup">
-              <a class="category-a" href="shop.html"><li data-category="all">All</li></a>
-              <a class="category-a" href="#"><li data-category="jewelry">Jewelry</li></a>
-              <a class="category-a" href="#"><li data-category="electronics">Electronics</li></a>
-              <a class="category-a" href="#"><li data-category="clothing">Clothing</li></a>
-              <a class="category-a" href="#"><li data-category="accessories">Accessories</li></a>
+              <li data-category="all">All</li>
+              <li data-category="jewelry">Jewelry</li>
+              <li data-category="bags">Bags</li>
+              <li data-category="clothing">Clothing</li>
+              <li data-category="accessories">Accessories</li>
             </ul>
           </div>
 
@@ -72,7 +72,7 @@
               Super Deals
             </a>
 
-            <a class="shop-a" href="shop.html">
+            <a class="shop-a" href="shop.html?category=all">
               Shop
             </a>
 
@@ -215,8 +215,9 @@
     </div>
   </div> <!-- Footer end -->
 
-  <script type="module" src="js/shop-page/items-render.js"></script>
   <script src="js/shop-page/dropdown.js"></script>
   <script src="js/header.js"></script>
+  <script type="module" src="js/shop-page/category-filter-from-shop.js"></script>
+  <script type="module" src="js/shop-page/category-filter-from-other-pages.js"></script>
 </body>
 </html>
