@@ -8,6 +8,9 @@ const min_price = document.getElementById("min-price");
 const max_price = document.getElementById("max-price");
 const in_stock = document.getElementById("checkbox-in-stock");
 
+const sort_by_list = document.querySelectorAll(".sort-by-container .menu li");
+
+
 let filters = { //Create object to store all filter things
   category: "all",
   minPrice: 0,
@@ -40,6 +43,15 @@ in_stock.addEventListener("change", (e) => {
   applyFilters();
 });
 
+sort_by_list.forEach(way => {
+  way.addEventListener("click", () => {
+    const selectedWay = way.dataset.value; //We store that clicked way in sort dropdown
+    filters.sort = selectedWay; //And assign that selected sorted way into filters.category
+    applyFilters() //Call this func to filter matching items and store in variable
+  });
+});
+
+
 
 //This func apply filters for our products.....
 function applyFilters() { 
@@ -48,11 +60,25 @@ function applyFilters() {
     filtered = filtered.filter(item => item.category === filters.category);  
   }
 
+  //Filter by min and max price
   filtered = filtered.filter(item => item.dis_price >= filters.minPrice && item.dis_price <= filters.maxPrice);
   
+  //Filter available items
   if (filters.inStock) {
     filtered = filtered.filter(item => item.stock >= 1);
   }
+
+  if (filters.sort === "low") { //Sort by Low to High price
+    filtered.sort((a,b) => a.dis_price - b.dis_price);
+  } 
+
+  if (filters.sort === "high") { //Sort by High to Low price
+    filtered.sort((a,b) => b.dis_price - a.dis_price);
+  } 
+
+  if (filters.sort === "reviews") { //Sort by rating
+    filtered.sort((a,b) => b.rating - a.rating);
+  } 
 
   renderProducts(filtered); //Call this func to render filtered items and we pass filtered items as a parameter
 }
