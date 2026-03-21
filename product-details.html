@@ -52,9 +52,17 @@
         </div>
 
         <div class="header-bottom">
-          <button class="all-categories-btn">
-            All Categories
-          </button>
+          <div class="category-dropdown">
+            <button class="all-categories-btn">All Categories</button>
+
+            <ul class="category-popup">
+              <a class="category-a" href="shop.html"><li data-category="all">All</li></a>
+              <a class="category-a" href="#"><li data-category="jewelry">Jewelry</li></a>
+              <a class="category-a" href="#"><li data-category="electronics">Electronics</li></a>
+              <a class="category-a" href="#"><li data-category="clothing">Clothing</li></a>
+              <a class="category-a" href="#"><li data-category="accessories">Accessories</li></a>
+            </ul>
+          </div>
 
           <nav class="navigations">
             <a class="home-a" href="index.html">
@@ -174,5 +182,6 @@
     <script src="js/product-details-page/quantity.js"></script>
 
     <script type="module" src="js/product-details-page/render-accordingly-id.js"></script>
+    <script src="js/header.js"></script>
   </body>
 </html> 

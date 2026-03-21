@@ -113,6 +113,10 @@ a{
   flex-wrap: wrap;
 }
 
+.category-dropdown {
+  position: relative;
+}
+
 .all-categories-btn{
   background-color: #E4E4E4;
   color: black;
@@ -133,6 +137,62 @@ a{
 .all-categories-btn:hover{
   background-color: #cecece;
 }
+
+.category-popup{
+  list-style: none;
+  padding: 10px 15px;
+  margin: 0;
+  background: white;
+  border: 1px solid #FF9452;
+  border-radius: 25px;
+  color: black;
+
+  white-space: nowrap;
+  position: absolute;
+  top: 60px;
+  left: 0;
+
+  display: none;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.category-popup a{
+  color: black;
+}
+
+.category-popup li{
+  padding: 15px 20px;
+  margin: 5px 0px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.category-popup li:hover{
+  background: #FF9452;
+  color: white;
+}
+
+.category-popup-open{
+  display: block;
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .navigations{
   margin-left: 40px;
