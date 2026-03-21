@@ -1,0 +1,131 @@
+.item-today-super-deals {
+  width: 268px;
+  height: 423px;
+  background-color: white;
+  border: 1px;
+  border-style: solid;
+  border-color: #FF9452;
+  border-radius: 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/*I use grid cause I wanna be all carts same sizes although diff title*/
+.item-today-super-deals .inner { 
+  display: grid;
+  grid-template-rows: 232px 89px 41px;
+  background-color: transparent;
+  gap: 12px;
+}
+
+.item-today-super-deals .inner a{
+  background-color: transparent;
+}
+
+.item-today-super-deals .inner img{
+  width: 232px;
+  border-radius: 24px;
+  background-color: transparent;
+}
+
+.item-today-super-deals .inner .middle{
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.item-today-super-deals .inner h3{
+  width: 232px;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: transparent;
+
+  /*Hie if title long more than 2 lines*/
+  display: -webkit-box;
+  -webkit-line-clamp: 2;      /* max 2 lines only */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.item-today-super-deals .rating {
+  background-color: transparent;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.item-today-super-deals .inner .rating img{
+  width: 85px;
+  background-color: transparent;
+  padding-right: 5px;
+}
+
+.item-today-super-deals .inner .rating span{
+  font-size: 11px;
+  color: rgb(145, 145, 145);
+  background-color: transparent;
+}
+
+
+
+.item-today-super-deals .price-with-dis-price{
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  align-items: center;
+  justify-content: start;
+}
+
+.item-today-super-deals .price-with-dis-price span{
+  font-size: 15px;
+  color: #07C730;
+  font-weight: 500;
+  background-color: transparent;
+  padding-right: 10px;
+}
+
+.item-today-super-deals .price-with-dis-price .real-price {
+  font-size: 12px;
+  color: rgb(112, 112, 112);
+  background-color: transparent;
+
+}
+
+.item-today-super-deals .add-to-cart-button {
+  background-color: #FF9452;
+
+  border-radius: 28px;
+  border: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 5px;
+}
+
+.item-today-super-deals .add-to-cart-button span{
+  background-color: transparent;
+  font-size: 13px;
+  font-weight: 500;
+  color: white;
+}
+
+.item-today-super-deals .add-to-cart-button img{
+  width: 25px;
+  background-color: transparent;
+}
+
+.add-to-cart-button:hover{
+  background-color: #ff7d2c;
+  cursor: pointer;
+}
+
+.item-today-super-deals:hover{
+  transform: translateY(-5px);   /* moves up */
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);  /* soft shadow */
+}

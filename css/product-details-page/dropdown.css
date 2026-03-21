@@ -55,3 +55,25 @@
   display: block;
   opacity: 1;
 }
+
+.size-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 18px;
+}
+
+.size-container p{
+  font-size: 17px;
+  font-weight: 500;
+}
+
+
+ .size-container .dropdown p{
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.size-container .dropdown img{
+  width: 13px;
+}

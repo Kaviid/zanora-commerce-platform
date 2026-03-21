@@ -4,6 +4,7 @@
 export const products = [
     {
         id: 1,
+        short_title : "Custom Toddler Backpack",
         title: "Custom Toddler Backpack",
         dis_price: 11.55,
         original_price: 34.99,
@@ -82,7 +83,7 @@ export const products = [
                 date: "2026-01-07"
             },
         ],
-        category: "Bags",
+        category: "bags",
         description: `
                 This custom toddler backpack is a perfect personalized school bag for little kids 🎒. You 
                 can add your child’s name to make it unique and easy to recognize at preschool or daycare 
@@ -99,6 +100,7 @@ export const products = [
 
     {
         id: 2,
+        short_title : "Dainty Freshwater Pearl Jewelry Set",
         title: "Dainty Freshwater Pearl Jewelry Set",
         dis_price: 19.99,
         original_price: 39.98,
@@ -145,7 +147,7 @@ export const products = [
                 date: "2026-02-01"
             },
         ],
-        category: "Jewelry", 
+        category: "jewelry", 
         description: `🎀14K Gold Real Pearl Jewelry Set, Single Pearl Diamond Pearl Set, Wedding Jewelry Set, Bridal Gifts, Engagement Gifts, Christmas Gift, Mother's Day Gift, Valentine's Gift
                         Bridesmaid Gift, Gift for Honor of Bridesmaid, Birthday Gift, Anniversary Gift🎀
 
@@ -231,7 +233,7 @@ export const products = [
                 date: "2026-02-05"   
             }
         ],
-        category: "Jewelry", 
+        category: "jewelry", 
         description: `✨ Personalized Birthstone Name Necklace
 
                         Add a personal touch with this beautiful personalized name necklace with a sparkling birthstone. Each piece is carefully handcrafted to display a name or meaningful word.
@@ -260,7 +262,7 @@ export const products = [
             "products-resorces/4/4.jpg"],
         rating: 0,
         reviews: [],
-        category: "Jewelry", 
+        category: "jewelry", 
         description: `
         ✨ Personalized Birthstone Name Necklace
 
@@ -333,7 +335,7 @@ export const products = [
                 date: "2025-12-11"   
             },
         ],
-        category: "Jewelry", 
+        category: "jewelry", 
         description: `
                     ✨ Turquoise & Coral Beaded Necklace
 
@@ -441,7 +443,7 @@ export const products = [
                 date: "2025-12-11"   
             },
         ],
-        category: "Jewelry", 
+        category: "jewelry", 
         description: `
                 ✨ Product Details
 
@@ -495,7 +497,7 @@ export const products = [
                 date: "2025-12-11"   
             }
         ],
-        category: "Jewelry", 
+        category: "jewelry", 
         description: `
                 ✨ Dainty Stacking Ring with Simulated Diamonds
 

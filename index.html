@@ -54,9 +54,17 @@
         </div>
 
         <div class="header-bottom">
-          <button class="all-categories-btn">
-            All Categories
-          </button>
+          <div class="category-dropdown">
+            <button class="all-categories-btn">All Categories</button>
+
+            <ul class="category-popup">
+              <a class="category-a" href="shop.html?category=all"><li>All</li></a>
+              <a class="category-a" href="shop.html?category=jewelry"><li>Jewelry</li></a>
+              <a class="category-a" href="shop.html?category=bags"><li>Bags</li></a>
+              <a class="category-a" href="shop.html?category=clothing"><li>Clothing</li></a>
+              <a class="category-a" href="shop.html?category=accessories"><li>Accessories</li></a>
+            </ul>
+          </div>
 
           <nav class="navigations">
             <a class="home-a" href="#">
@@ -67,7 +75,7 @@
               Super Deals
             </a>
 
-            <a class="shop-a" href="#">
+            <a class="shop-a" href="shop.html?category=all">
               Shop
             </a>
 
@@ -255,7 +263,7 @@
             <h3>Pages</h3>
             <div>
               <a href="index.html">Home</a>
-              <a href="#">Shop</a>
+              <a href="shop.html">Shop</a>
               <a href="#">My Profile</a> 
             </div>
 
@@ -302,5 +310,6 @@
 
     <script src="js/products.js"></script> 
     <script type="module" src="js/home-page/home-page-scrolling-carts.js"></script>
+    <script src="js/header.js"></script>
   </body>
 </html>
