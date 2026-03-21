@@ -1,6 +1,6 @@
 .item-today-super-deals {
   width: 268px;
-  padding: 15px 0px;
+  height: 423px;
   background-color: white;
   border: 1px;
   border-style: solid;
@@ -13,10 +13,10 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.item-today-super-deals .inner {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
+/*I use grid cause I wanna be all carts same sizes although diff title*/
+.item-today-super-deals .inner { 
+  display: grid;
+  grid-template-rows: 232px 89px 41px;
   background-color: transparent;
   gap: 12px;
 }
@@ -43,6 +43,12 @@
   font-size: 15px;
   font-weight: 600;
   background-color: transparent;
+
+  /*Hie if title long more than 2 lines*/
+  display: -webkit-box;
+  -webkit-line-clamp: 2;      /* max 2 lines only */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .item-today-super-deals .rating {

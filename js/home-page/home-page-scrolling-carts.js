@@ -12,7 +12,7 @@ for(let i = 1; i <= 2; i++){ //I use for loop cause I wanna duplicate that 7 ele
             <div class="inner">
               <a href = "product-details.html?id=${item.id}"><img src="${item.image[0]}"></a>
               <div class="middle">
-                <h3>${item.short_title}</h3>
+                <h3>Custom Toddler Backpack</h3>
                 <p>Custom Toddler Backpack, the perfect companion for your little one's 
                   preschool adventures! Designed with both style and functionality in mind, 
                   this Preschool Backpack is ideal for carrying books, snacks, and toys, 

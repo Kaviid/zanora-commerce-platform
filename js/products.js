@@ -4,6 +4,7 @@
 export const products = [
     {
         id: 1,
+        short_title : "Custom Toddler Backpack",
         title: "Custom Toddler Backpack",
         dis_price: 11.55,
         original_price: 34.99,
@@ -99,6 +100,7 @@ export const products = [
 
     {
         id: 2,
+        short_title : "Dainty Freshwater Pearl Jewelry Set",
         title: "Dainty Freshwater Pearl Jewelry Set",
         dis_price: 19.99,
         original_price: 39.98,
