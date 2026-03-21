@@ -10,7 +10,8 @@
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/general.css">
   <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="css/shop-page/today-super-deals-scrolling.css">
+  <link rel="stylesheet" href="css/shop-page/cart.css">
+  <link rel="stylesheet" href="css/shop-page/shop-page.css">
 </head>
 <body>
   <div class="container">
@@ -76,35 +77,13 @@
         </div>
     </header>
 
+    <div class="filter-container"> <!---Filter container--->
 
-          <div class = "item-today-super-deals">
-            <div class="inner">
-              <a href = "#"><img src="products-resorces/6/1.jpg"></a>
-              <div class="middle">
-                <h3>Custom Toddler Backpack</h3>
-                
-                <div class = "rating">
-                  <img src="icons/Stars.png">
-                  <span>(123)</span>
-                </div>
-                <div class="price-with-dis-price">
-                  <span class="real-price">USD 25</span>
-                  <span class="dis-price">USD 45.67</span>
-                </div>
-              </div>
-              
-              <button class="add-to-cart-button">
-                  <img src="icons/shopping-cart-for-add-to-cart.png">
-                  <span>Add to Cart</span>
-              </button>
-            </div>
-          </div>
+    </div> <!---Filter container end--->
 
+    <div class="items-container" id="items-container"> <!---Items container--->
 
-
-
-
-
+    </div> <!---Items container end--->
 
 
 
@@ -190,5 +169,7 @@
       </div>
     </div>
   </div> <!-- Footer end -->
+
+  <script type="module" src="js/shop-page/items-render.js"></script>
 </body>
 </html>
