@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/shop-page/cart.css">
   <link rel="stylesheet" href="css/shop-page/shop-page.css">
+  <link rel="stylesheet" href="css/shop-page/filters.css">
 </head>
 <body>
   <div class="container">
@@ -79,13 +80,48 @@
 
     <div class="filter-container"> <!---Filter container--->
 
+      <label class="in-stock-cb"> <!---In Stock checkbox--->
+        <span>In Stock</span>
+        <input type="checkbox">
+        <span class="box"></span>
+      </label>
+ 
+      <div class="price-filter"> <!---Min and Max price--->
+        <div class="price-field">
+          <label>Min</label>
+          <input type="number" placeholder="$0">
+        </div>
+
+        <div class="price-field">
+          <label>Max</label>
+          <input type="number" placeholder="$100">
+        </div>
+      </div>
+
+      <div class="sort-by-container"> <!---Dropdown--->
+        <p>Sort By</p>
+        <div class="dropdown">
+          <div class="select">
+            <span class="selected">Relevency</span> <!-- default -->
+            <img src="icons/dropdown.png" class="caret">
+          </div>
+
+          <ul class="menu">
+            <li data-value="relevency">Relevency</li>
+            <li data-value="low">Lowest Price</li>
+            <li data-value="high">Highest Price</li>
+            <li data-value="reviews">Top Customer Reviews</li>
+          </ul>
+        </div>
+      </div>
+      
+
+
     </div> <!---Filter container end--->
 
     <div class="items-container" id="items-container"> <!---Items container--->
-
+      <!---Js render elements...--->
     </div> <!---Items container end--->
-
-
 
   </div> <!---Container end--->
 
@@ -171,5 +207,6 @@
   </div> <!-- Footer end -->
 
   <script type="module" src="js/shop-page/items-render.js"></script>
+  <script src="js/shop-page/dropdown.js"></script>
 </body>
 </html>

@@ -1,0 +1,159 @@
+
+.filter-container {
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: 200px 600px 1fr;
+  justify-content: space-between;
+
+}
+
+/*In Stock Check box --------------------------------------------------------------*/
+
+.filter-container .in-stock-cb {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 20px;
+}
+
+.filter-container .in-stock-cb span {
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.filter-container .in-stock-cb input {
+  display: none;
+}
+
+.filter-container .in-stock-cb .box {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #FF9452;
+  border-radius: 6px;
+}
+
+.filter-container .in-stock-cb input:checked + .box {
+  background-color: #FF9452;
+}
+
+.filter-container .in-stock-cb input:checked + .box::after {
+  content: "✔";
+  color: white;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Min and Max price --------------------------------------------------------------*/
+
+.price-filter {
+  display: flex;
+  gap: 15px;
+}
+
+.price-field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 300;
+  gap: 15px;
+}
+
+.price-field input {
+  width: 136px;
+  height: 35px;
+  border: 2px solid #FF9452;
+  border-radius: 30px;
+  padding: 5px 20px;
+  outline: none;
+}
+
+.price-field input:focus {
+  border-color: #ff7a2f;
+}
+
+/* Chrome */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
+/* Dropdown -------------------------------------------------------------- */
+
+.sort-by-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.sort-by-container  p{
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.dropdown{
+  position: relative;
+}
+
+.dropdown *{
+  box-sizing: border-box;
+}
+
+.select{
+  background: transparent;
+  color: gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #FF9452;
+  border-radius: 25px;
+  padding: 12px 30px;
+  cursor: pointer;
+  gap: 20px;
+}
+
+.menu{
+  list-style: none;
+  padding: 10px 15px;
+  margin: 0;
+  background: white;
+  border: 1px solid #FF9452;
+  border-radius: 25px;
+  color: black;
+
+  white-space: nowrap;
+  position: absolute;
+  top: 60px;
+  left: 0;
+
+
+  display: none;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.menu li{
+  padding: 15px 20px;
+  margin: 5px 0px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.menu li:hover{
+  background: #FF9452;
+  color: white;
+}
+.menu-open{
+  display: block;
+  opacity: 1;
+}
+
+.dropdown img{
+  width: 13px;
+}
