@@ -12,11 +12,11 @@ products.forEach(item => {
             
             <div class = "rating">
               <img src="icons/Stars.png">
-              <span>(123)</span>
+              <span>(${item.rating})</span>
             </div>
             <div class="price-with-dis-price">
-              <span class="real-price">USD 25</span>
-              <span class="dis-price">USD 45.67</span>
+              <span class="dis-price">USD ${item.dis_price}</span>
+              <span class="real-price">USD ${item.original_price}</span>
             </div>
           </div>
           
