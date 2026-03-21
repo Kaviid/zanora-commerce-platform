@@ -3,7 +3,11 @@ import {products} from "../products.js"
 const categories = document.querySelectorAll(".category-popup li");
 
 const container = document.getElementById("items-container"); //Catch items display container
- 
+
+const min_price = document.getElementById("min-price");
+const max_price = document.getElementById("max-price");
+const in_stock = document.getElementById("checkbox-in-stock");
+
 let filters = { //Create object to store all filter things
   category: "all",
   minPrice: 0,
@@ -11,7 +15,6 @@ let filters = { //Create object to store all filter things
   inStock: false,
   sort: "relevancy"
 };
-
 
 categories.forEach(item => {
   item.addEventListener("click", () => {
@@ -22,14 +25,40 @@ categories.forEach(item => {
 });
 
 
-function applyFilters() {
+min_price.addEventListener("input", (e) => {
+filters.minPrice = Number(e.target.value) || 0;
+applyFilters();
+});
+
+max_price.addEventListener("input", (e) => {
+  filters.maxPrice = Number(e.target.value) || Infinity;
+  applyFilters();
+});
+
+in_stock.addEventListener("change", (e) => {
+  filters.inStock = e.target.checked;
+  applyFilters();
+});
+
+
+//This func apply filters for our products.....
+function applyFilters() { 
   let filtered = products; //If user select "all" then all products assign to filtered variable 
   if (filters.category !== "all") { //If user select "!all" then matching products assign to filtered var
     filtered = filtered.filter(item => item.category === filters.category);  
   }
+
+  filtered = filtered.filter(item => item.dis_price >= filters.minPrice && item.dis_price <= filters.maxPrice);
+  
+  if (filters.inStock) {
+    filtered = filtered.filter(item => item.stock >= 1);
+  }
+
   renderProducts(filtered); //Call this func to render filtered items and we pass filtered items as a parameter
 }
 
+
+//This func render filtered items...........
 function renderProducts(f_products) {
   container.innerHTML = ""; //Everytime clear current container first cause if we don't do that items duplicate
   f_products.forEach(f_item => { //Loop through parameter
