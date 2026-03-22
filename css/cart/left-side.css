@@ -1,0 +1,99 @@
+.details-container .left-side{
+  display: flex;
+  flex-direction: column;
+}
+
+.details-container .left-side .titles-of-parts{
+  display: grid;
+  grid-template-columns: 395px 120px 155px 100px;
+  margin-bottom: 30px;
+}
+
+.details-container .left-side .titles-of-parts .prod{
+  margin-left: 40px;
+}
+
+.details-container .left-side .titles-of-parts p{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.details-container .left-side .item-details{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.details-container .left-side .item-details .per-item{
+  display: grid;
+  grid-template-columns: 18px 85px 230px 100px 140px 100px;
+  gap: 15px;
+  align-items: center;
+}
+
+.details-container .left-side .item-details .per-item button{
+  border: none;
+  cursor: pointer;
+}
+
+.details-container .left-side .item-details .per-item button img{
+  width: 15px;
+}
+
+.details-container .left-side .item-details .per-item .main-img {
+  width: 70px;
+  border: 2px solid #FF9452;
+  border-radius: 20px;
+}
+
+.details-container .left-side .item-details .per-item .product-short-title {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.details-container .left-side .item-details .per-item .dis-and-ori-price .ori{
+  font-size: 12px;
+  color: gray;
+}
+
+.details-container .left-side .item-details .per-item .dis-and-ori-price .dis{
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.details-container .left-side .item-details .per-item .quantity-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.details-container .left-side .item-details .per-item .quantity-container .inc-decre{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 28px;
+
+  border: 2px solid #FF9452;
+  border-radius: 30px;
+  padding: 10px 20px;
+}
+
+.details-container .left-side .item-details .per-item .quantity-container .inc-decre button{
+  border: none;
+  cursor: pointer;
+}
+
+.details-container .left-side .item-details .per-item .quantity-container .inc-decre .sign{
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.details-container .left-side .item-details .per-item .quantity-container .inc-decre .value{
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.details-container .left-side .item-details .per-item .total-of-items {
+  font-size: 15px;
+  font-weight: 600;
+}

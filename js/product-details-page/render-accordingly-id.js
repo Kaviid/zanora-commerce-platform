@@ -106,9 +106,9 @@ details.innerHTML = `
                   <div class="quantity-container">
                     <p>Quantity</p>
                     <div class="inc-decre">
-                      <button class="sign minus" ">-</button>
+                      <button class="sign minus">-</button>
                       <p class="value" id="q-value">1</p>
-                      <button class="sign plus" ">+</button>
+                      <button class="sign plus">+</button>
                     </div>
                   </div>
                 </div>
