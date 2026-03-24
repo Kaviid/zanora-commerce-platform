@@ -20,18 +20,6 @@
   align-items: center;
 }
 
-.hero-right-side{
-
-  height: 590px;
-  width: 466px;
-  background-color: #ffe8d9;
-
-  border-radius: 45px;
-  border: 1px;
-  border-color: #FF9452;
-  border-style: solid;
-}
-
 .hero-left-side-inside-top{
   width: 584px;
   height: 522px;
@@ -122,4 +110,102 @@
   border: none;
   border-radius: 39px;
   padding: 10px 122px;
+}
+
+/*Right side ---------------------------------------------------------------------------*/
+
+.hero-right-side{
+
+  height: 590px;
+  width: 466px;
+  background-color: #ffe8d9;
+
+  border-radius: 45px;
+  border: 1px;
+  border-color: #FF9452;
+  border-style: solid;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-right-side .inner{
+  width: 378px;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  gap: 10px;
+  align-items: start;
+}
+
+.hero-right-side .inner a{
+  background-color: transparent;
+}
+
+.hero-right-side .inner img{
+  width: 378px;
+  border-radius: 25px;
+}
+
+.hero-right-side .inner .text{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  background-color: transparent;
+}
+
+.hero-right-side .inner .text h3{
+  font-size: 19px;
+  font-weight: 600;
+  background-color: transparent;
+
+  /*Hie if title long more than 2 lines*/
+  display: -webkit-box;
+  -webkit-line-clamp: 1;      /* max 2 lines only */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.hero-right-side .inner .text p{
+  font-size: 13px;
+  font-weight: 400;
+  color: gray;
+  background-color: transparent;
+
+  /*Hie if title long more than 2 lines*/
+  display: -webkit-box;
+  -webkit-line-clamp: 2;      /* max 2 lines only */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.hero-right-side .inner .text img {
+  width: 104px;
+  background-color: transparent;
+}
+
+.hero-right-side .inner .prices{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  background-color: transparent;
+  align-items: center;
+  
+}
+
+.hero-right-side .inner .prices .dis-price{
+  color: #07C730;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: transparent;
+
+}
+
+.hero-right-side .inner .prices .original-price{
+  font-size: 14px;
+  font-weight: 400;
+  color: gray;
+  background-color: transparent;
+  text-decoration: line-through;
 }
