@@ -1,24 +1,20 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Cart</title>
+<head>
+  <title>Contact us</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/general.css">
+    
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/cart/cart-general.css">
-    <link rel="stylesheet" href="css/cart/left-side.css">
-    <link rel="stylesheet" href="css/cart/right-side.css">
-  </head>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/contact-us/contact-us.css">
+</head>
 
-  <body>
-    <div class="container">
-
-      <header class="header"> <!---Header section-->
+<body>
+  <div class="container">
+      <header class="header">
 
         <div class="header-top">
 
@@ -64,7 +60,6 @@
             </ul>
           </div>
 
-
           <nav class="navigations">
             <a class="home-a" href="index.html">
               Home
@@ -89,123 +84,31 @@
         </div>
       </header>
 
-      <h3 class="main-title">Your Cart</h3>
+      <div class="wrap-all">
 
-      <div class="details-container"> <!---Entire container of item details--->
+      <h3 class="main-topic">Contact Us</h3>
+      <p class="main-p">We’d love your feedback — leave a message and a rating.</p>
 
-        <div class="left-side"> <!---Left side--->
-          <div class="titles-of-parts">
-            <p class="prod">Products</p>
-            <p>Price</p>
-            <p>Quantity</p>
-            <p>Subtotal</p>
-          </div>
+      <div class="message-box">
+        <p class="text-box-topic">Your Message</p>
 
-          <div class="item-details">
+        <div class="textarea-wrapper">
+          <textarea placeholder="Tell us what you think..."></textarea>
+        </div>
 
-            <div class="per-item">
-              <button><img src="icons/delete.png" alt="delete"></button>
-              <img src="products-resorces/5/1.jpg" class="main-img">
-              <p class="product-short-title">Turquoise Necklace with White & Pink Coral</p>
+        <div class="send-message"> 
+          <button>
+            <span>Send Message</span>
+          </button>
+        </div>
 
-              <div class="dis-and-ori-price">
-                <p class="ori">USD 56.67</p>
-                <p class="dis">USD 24.67</p>
-              </div>
-
-              <div class="quantity-container">
-                <div class="inc-decre">
-                  <button class="sign minus">-</button>
-                  <p class="value" id="q-value">1</p>
-                  <button class="sign plus">+</button>
-                </div>
-              </div>
-
-              <p class="total-of-items">USD 24.67</p>
-            </div>
-
-            <div class="per-item">
-              <button><img src="icons/delete.png" alt="delete"></button>
-              <img src="products-resorces/1/1.jpg" class="main-img">
-              <p class="product-short-title">Turquoise Necklace with White & Pink Coral</p>
-
-              <div class="dis-and-ori-price">
-                <p class="ori">USD 26.67</p>
-                <p class="dis">USD 12.98</p>
-              </div>
-
-              <div class="quantity-container">
-                <div class="inc-decre">
-                  <button class="sign minus">-</button>
-                  <p class="value" id="q-value">1</p>
-                  <button class="sign plus">+</button>
-                </div>
-              </div>
-
-              <p class="total-of-items">USD 36.67</p>
-            </div>
-
-            <div class="per-item">
-              <button><img src="icons/delete.png" alt="delete"></button>
-              <img src="products-resorces/2/1.jpg" class="main-img">
-              <p class="product-short-title">Turquoise Necklace with White & Pink Coral</p>
-
-              <div class="dis-and-ori-price">
-                <p class="ori">USD 56.67</p>
-                <p class="dis">USD 24.67</p>
-              </div>
-
-              <div class="quantity-container">
-                <div class="inc-decre">
-                  <button class="sign minus">-</button>
-                  <p class="value" id="q-value">1</p>
-                  <button class="sign plus">+</button>
-                </div>
-              </div>
-
-              <p class="total-of-items">USD 123.67</p>
-            </div>
-
-          </div>
-
-        </div> 
-
-        <div class="right-side">
-          <h3>Order Summary</h3>
-          <div class="bill-wrap">
-            <div class="bill-row">
-              <p class="title">Items</p>
-              <p class="value">3</p>
-            </div>
-            <div class="bill-row">
-              <p class="title">Sub Total</p>
-              <p class="value">USD 45.78</p>
-            </div>
-            <div class="bill-row">
-              <p class="title">Total Discount</p>
-              <p class="value">USD 12.56</p>
-            </div>
-            <div class="bill-row">
-              <p class="title">Shipping</p>
-              <p class="value">0</p>
-            </div>
-
-            <div class="bill-row">
-              <p class="total-title">Total</p>
-              <p class="total-price">USD 342.76</p>
-            </div>
-
-            <button class="add-to-cart-button">
-              <span>Proceed to Checkout</span>
-            </button>
-          </div>
-        </div> <!---Right side--->
       </div>
 
+      </div>
 
-    </div>
+  </div>
 
-    <div class="footer"> <!-- Footer -->
+  <div class="footer">
       <div class="inner-top">
         <h2 class="subscribe-title">Subscribe to our email newsletter and get 20% off</h2>
         <p class="subscribe-description">Join our community and be the first to discover new handmade collections, exclusive offers, and special drops.</p>
@@ -284,10 +187,8 @@
           </div>
         </div>
       </div>
-    </div> <!-- Footer end -->
+  </div>
 
-
-
-    <script src="js/header.js"></script>
-  </body>
+  <script src="js/header.js"></script>
+</body>
 </html>
