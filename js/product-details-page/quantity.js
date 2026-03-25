@@ -1,4 +1,4 @@
-let cartQuantity = 1;
+export let cartQuantity = 1;
 
 
 export function increase() {
