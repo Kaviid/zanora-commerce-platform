@@ -10,121 +10,57 @@ a{
 }
 
 .container{
-  width: 1152px;
-  min-width: 800px;
-  margin: auto;
+    width: 1152px;
+    min-width: 800px;
+    margin: auto;
+}
 
+.inside-container .label {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.inside-container .type-box {
+  height: 45px;
+  width: 450px;
+  border-radius: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid gray;
+}
+
+.email-box,
+.password-box{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 70px;
+  gap: 9px;
 }
 
-.wrap-log-reg{
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-
-  align-items: center;
-  justify-content: center;
+.type-box::placeholder{
+  font-size: 15px;
 }
 
-.wrap-log-reg .right {
-  display: flex;
-  flex-direction: column;
-  height: 435px;
-
-  border: 2px solid #FF9452;
-  padding: 30px 20px;
-  border-radius: 20px;
-}
-.wrap-log-reg .left img{
-  height: 500px;
-  border-radius: 20px;
-}
-
-.wrap-log-reg .right .top{
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  align-items: center;
-  padding-bottom: 15px;
-  border-bottom: 1px solid gray;
-  margin-bottom: 30px;
-}
-.wrap-log-reg .right .top img{
-  width: 15px;
-}
-
-.wrap-log-reg .right .top p{
+.type-box{
   font-size: 16px;
 }
 
-.wrap-log-reg .right .top .reg{
-  color: rgb(44, 44, 44);
+.password-box a{
+  margin-top: -7px;
 }
 
-.wrap-log-reg .right .top .log-in {
-  font-size: 18px;
-  color: green;
-  font-weight: 600;
-}
-
-.wrap-log-reg .right .middle .form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.wrap-log-reg .right .middle .form-group label{
-  font-size: 15px;
-  color: rgb(54, 54, 54);
-  font-weight: 500;
-}
-
-.form-group {
-  width: 450px;
-  margin-bottom: 20px;
-}
-
-.form-group input {
-  padding: 12px 14px;
-  border-radius: 12px;
-  border: 1px solid #FF9452;
-  background: #f9fafb;
-  font-size: 14px;
+.type-box:focus{
   outline: none;
 }
 
-.forgot{
-  display: flex;
-  justify-content: end;
-}
-
-
-
-.log-in-btn button {
-  background-color: #FF9452;
-
-  border-radius: 28px;
+.sign-in{
   border: none;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 12px 100px;
-  gap: 10px;
-}
-
-.log-in-btn button span{
-  background-color: transparent;
-  font-size: 15px;
-  font-weight: 500;
+  background-color: #FF9452;
+  font-size: 18px;
+  font-weight: 600;
   color: white;
-}
-
-.log-in-btn button:hover{
-  background-color: #ff7d2c;
-  cursor: pointer;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 15px;
 }
