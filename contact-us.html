@@ -1,24 +1,20 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Product Details</title>
+<head>
+  <title>Contact us</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/product-details-page/image-slider.css">
-    <link rel="stylesheet" href="css/product-details-page/product-main-details-right.css">
-    <link rel="stylesheet" href="css/product-details-page/dropdown.css">
-    <link rel="stylesheet" href="css/product-details-page/review-and-description.css">
-  </head>
-  <body>
-    <div class="container"> <!-- Container -->
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/contact-us/contact-us.css">
+</head>
 
-      <header class="header"> <!-- Header -->
+<body>
+  <div class="container">
+      <header class="header">
 
         <div class="header-top">
 
@@ -86,16 +82,33 @@
             </a>
           </nav>
         </div>
-      </header> <!-- Header end-->
+      </header>
 
-      <div class="hero-description-reviews-container" id = "all-container-main">
+      <div class="wrap-all">
+
+      <h3 class="main-topic">Contact Us</h3>
+      <p class="main-p">We’d love your feedback — leave a message and a rating.</p>
+
+      <div class="message-box">
+        <p class="text-box-topic">Your Message</p>
+
+        <div class="textarea-wrapper">
+          <textarea placeholder="Tell us what you think..."></textarea>
+        </div>
+
+        <div class="send-message"> 
+          <button>
+            <span>Send Message</span>
+          </button>
+        </div>
 
       </div>
 
+      </div>
 
-    </div> <!-- Container end -->
+  </div>
 
-    <div class="footer"> <!-- Footer -->
+  <div class="footer">
       <div class="inner-top">
         <h2 class="subscribe-title">Subscribe to our email newsletter and get 20% off</h2>
         <p class="subscribe-description">Join our community and be the first to discover new handmade collections, exclusive offers, and special drops.</p>
@@ -131,7 +144,7 @@
             <h3>Pages</h3>
             <div>
               <a href="index.html">Home</a>
-              <a href="#">Shop</a>
+              <a href="shop.html">Shop</a>
               <a href="#">My Profile</a> 
             </div>
 
@@ -174,15 +187,8 @@
           </div>
         </div>
       </div>
-    </div> <!-- Footer end -->
+  </div>
 
-
-    <script src="js/product-details-page/image-slider.js"></script>
-    <script src="js/product-details-page/dropdown.js"></script>
-    <script src="js/product-details-page/quantity.js"></script>
-
-    <script type="module" src="js/product-details-page/render-accordingly-id.js"></script>
-    <script type="module" src="js/product-details-page/value.js"></script>
-    <script src="js/header.js"></script>
-  </body>
-</html> 
+  <script src="js/header.js"></script>
+</body>
+</html>

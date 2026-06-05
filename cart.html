@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Product Details</title>
+    <title>Cart</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/product-details-page/image-slider.css">
-    <link rel="stylesheet" href="css/product-details-page/product-main-details-right.css">
-    <link rel="stylesheet" href="css/product-details-page/dropdown.css">
-    <link rel="stylesheet" href="css/product-details-page/review-and-description.css">
-  </head>
-  <body>
-    <div class="container"> <!-- Container -->
 
-      <header class="header"> <!-- Header -->
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/cart/cart-general.css">
+    <link rel="stylesheet" href="css/cart/left-side.css">
+    <link rel="stylesheet" href="css/cart/right-side.css">
+  </head>
+
+  <body>
+    <div class="container">
+
+      <header class="header"> <!---Header section-->
 
         <div class="header-top">
 
@@ -64,6 +64,7 @@
             </ul>
           </div>
 
+
           <nav class="navigations">
             <a class="home-a" href="index.html">
               Home
@@ -86,14 +87,123 @@
             </a>
           </nav>
         </div>
-      </header> <!-- Header end-->
+      </header>
 
-      <div class="hero-description-reviews-container" id = "all-container-main">
+      <h3 class="main-title">Your Cart</h3>
 
+      <div class="details-container"> <!---Entire container of item details--->
+
+        <div class="left-side"> <!---Left side--->
+          <div class="titles-of-parts">
+            <p class="prod">Products</p>
+            <p>Price</p>
+            <p>Quantity</p>
+            <p>Subtotal</p>
+          </div>
+
+          <div class="item-details">
+
+            <div class="per-item">
+              <button><img src="icons/delete.png" alt="delete"></button>
+              <img src="products-resorces/5/1.jpg" class="main-img">
+              <p class="product-short-title">Turquoise Necklace with White & Pink Coral</p>
+
+              <div class="dis-and-ori-price">
+                <p class="ori">USD 56.67</p>
+                <p class="dis">USD 24.67</p>
+              </div>
+
+              <div class="quantity-container">
+                <div class="inc-decre">
+                  <button class="sign minus">-</button>
+                  <p class="value" id="q-value">1</p>
+                  <button class="sign plus">+</button>
+                </div>
+              </div>
+
+              <p class="total-of-items">USD 24.67</p>
+            </div>
+
+            <div class="per-item">
+              <button><img src="icons/delete.png" alt="delete"></button>
+              <img src="products-resorces/1/1.jpg" class="main-img">
+              <p class="product-short-title">Turquoise Necklace with White & Pink Coral</p>
+
+              <div class="dis-and-ori-price">
+                <p class="ori">USD 26.67</p>
+                <p class="dis">USD 12.98</p>
+              </div>
+
+              <div class="quantity-container">
+                <div class="inc-decre">
+                  <button class="sign minus">-</button>
+                  <p class="value" id="q-value">1</p>
+                  <button class="sign plus">+</button>
+                </div>
+              </div>
+
+              <p class="total-of-items">USD 36.67</p>
+            </div>
+
+            <div class="per-item">
+              <button><img src="icons/delete.png" alt="delete"></button>
+              <img src="products-resorces/2/1.jpg" class="main-img">
+              <p class="product-short-title">Turquoise Necklace with White & Pink Coral</p>
+
+              <div class="dis-and-ori-price">
+                <p class="ori">USD 56.67</p>
+                <p class="dis">USD 24.67</p>
+              </div>
+
+              <div class="quantity-container">
+                <div class="inc-decre">
+                  <button class="sign minus">-</button>
+                  <p class="value" id="q-value">1</p>
+                  <button class="sign plus">+</button>
+                </div>
+              </div>
+
+              <p class="total-of-items">USD 123.67</p>
+            </div>
+
+          </div>
+
+        </div> 
+
+        <div class="right-side">
+          <h3>Order Summary</h3>
+          <div class="bill-wrap">
+            <div class="bill-row">
+              <p class="title">Items</p>
+              <p class="value">3</p>
+            </div>
+            <div class="bill-row">
+              <p class="title">Sub Total</p>
+              <p class="value">USD 45.78</p>
+            </div>
+            <div class="bill-row">
+              <p class="title">Total Discount</p>
+              <p class="value">USD 12.56</p>
+            </div>
+            <div class="bill-row">
+              <p class="title">Shipping</p>
+              <p class="value">0</p>
+            </div>
+
+            <div class="bill-row">
+              <p class="total-title">Total</p>
+              <p class="total-price">USD 342.76</p>
+            </div>
+
+            <button class="add-to-cart-button">
+              <span>Proceed to Checkout</span>
+            </button>
+          </div>
+        </div> <!---Right side--->
       </div>
 
 
-    </div> <!-- Container end -->
+    </div>
 
     <div class="footer"> <!-- Footer -->
       <div class="inner-top">
@@ -131,7 +241,7 @@
             <h3>Pages</h3>
             <div>
               <a href="index.html">Home</a>
-              <a href="#">Shop</a>
+              <a href="shop.html">Shop</a>
               <a href="#">My Profile</a> 
             </div>
 
@@ -177,12 +287,7 @@
     </div> <!-- Footer end -->
 
 
-    <script src="js/product-details-page/image-slider.js"></script>
-    <script src="js/product-details-page/dropdown.js"></script>
-    <script src="js/product-details-page/quantity.js"></script>
 
-    <script type="module" src="js/product-details-page/render-accordingly-id.js"></script>
-    <script type="module" src="js/product-details-page/value.js"></script>
     <script src="js/header.js"></script>
   </body>
-</html> 
+</html>

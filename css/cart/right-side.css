@@ -1,0 +1,79 @@
+.right-side{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.right-side h3{
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.right-side .bill-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border: 2px solid #FF9452;
+  border-radius: 31px;
+  padding: 26px;
+  gap: 24px;
+}
+
+.right-side .bill-wrap .bill-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.right-side .bill-wrap .bill-row .title{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.right-side .bill-wrap .bill-row .value{
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.right-side .bill-wrap .bill-row .total-title{
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.right-side .bill-wrap .bill-row .total-price{
+  font-size: 22px;
+  font-weight: 700;
+  color: #07C730;
+}
+
+.right-side .bill-wrap .add-to-cart-button {
+  background-color: #FF9452;
+
+  border-radius: 28px;
+  border: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 13px 70px;
+}
+
+.right-side .bill-wrap .add-to-cart-button span{
+  background-color: transparent;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+}
+
+.right-side .bill-wrap  .add-to-cart-button img{
+  width: 25px;
+  background-color: transparent;
+}
+
+.right-side .bill-wrap .add-to-cart-button:hover{
+  background-color: #ff7d2c;
+  cursor: pointer;
+}
