@@ -1,6 +1,6 @@
-//For db access
 
 <?php
+//For db access
 
 $host = "localhost";
 $user = "root";
