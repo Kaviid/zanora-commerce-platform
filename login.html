@@ -16,25 +16,27 @@
       <i class="fa-solid fa-arrow-left"></i>
     </a>
 
-    <div class="inside-container">
-      <p class="login">Login</p>
-
-      <div class="email-box">
-        <label for="" class="label">Email</label>
-        <input type="text" class="type-box" placeholder="Enter email">
+    <form action="backend/auth/login.php" method="POST">
+      <div class="inside-container">
+        <p class="login">Login</p>
+  
+        <div class="email-box">
+          <label for="" class="label">Email</label>
+          <input type="text" name="email" class="type-box" placeholder="Enter email">
+        </div>
+  
+        <div class="password-box">
+          <label for="" class="label">Password</label>
+          <input type="password" name="password" class="type-box" placeholder="Enter password">
+          <a href="#">Forgot password?</a>
+        </div>
+  
+        <div class="submit">
+          <button class="sign-in">Sign In</button>
+          <p class="reg-label">Not a member? <a href="register.html" class="reg-href">Register here</a></p>
+        </div>
       </div>
-
-      <div class="password-box">
-        <label for="" class="label">Password</label>
-        <input type="password" class="type-box" placeholder="Enter password">
-        <a href="#">Forgot password?</a>
-      </div>
-
-      <div class="submit">
-        <button class="sign-in">Sign In</button>
-        <p class="reg-label">Not a member? <a href="register.html" class="reg-href">Register here</a></p>
-      </div>
-    </div>
+    </form>
   </div>
 </body>
 </html>
