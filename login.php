@@ -12,7 +12,7 @@
 
 <body>
   <div class="container">
-    <a href="index.html" class="back-btn">
+    <a href="index.php" class="back-btn">
       <i class="fa-solid fa-arrow-left"></i>
     </a>
 
@@ -33,7 +33,7 @@
   
         <div class="submit">
           <button type="submit" class="sign-in">Sign In</button>
-          <p class="reg-label">Not a member? <a href="register.html" class="reg-href">Register here</a></p>
+          <p class="reg-label">Not a member? <a href="register.php" class="reg-href">Register here</a></p>
         </div>
       </div>
     </form>

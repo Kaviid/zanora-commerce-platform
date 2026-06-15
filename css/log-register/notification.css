@@ -1,0 +1,28 @@
+.container{
+    position: relative;
+}
+
+.msg-box{
+    position: absolute;
+    left: 105%;
+    bottom: 20px;
+
+    width: 250px;
+    padding: 10px;
+
+    border-radius: 8px;
+    color: rgb(255, 0, 0);
+    
+}
+
+.sec{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.sec div{
+    color: red;
+    font-size: 15px;
+}
