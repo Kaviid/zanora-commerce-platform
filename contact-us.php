@@ -1,98 +1,49 @@
+<?php
+session_start();
+include 'includes/header.php';
+?>
+
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Super Deals</title>
+<head>
+  <title>Contact us</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/header.css">
+    
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/super-deals/super-deals.css">
-    <link rel="stylesheet" href="css/super-deals/cart.css">
-  </head>
+    <link rel="stylesheet" href="css/contact-us/contact-us.css">
+</head>
 
-  <body>
-    <div class="container">
-      <header class="header">
+<body>
+  <div class="container">
 
-            <div class="header-top">
+      <div class="wrap-all">
 
-              <a class="logo-div" href="index.php">
-                <img class="zanora-logo" src="images/Zanora-logo.png">
-              </a>
+      <h3 class="main-topic">Contact Us</h3>
+      <p class="main-p">We’d love your feedback — leave a message and a rating.</p>
 
-              <div class="middle-section">
-                <input class="search-bar" type="text" placeholder="Search for anything">
-              </div>
+      <div class="message-box">
+        <p class="text-box-topic">Your Message</p>
 
-              <div class="user-actions">
+        <div class="textarea-wrapper">
+          <textarea placeholder="Tell us what you think..."></textarea>
+        </div>
 
-                <div  class="currency">USD</div>
+        <div class="send-message"> 
+          <button>
+            <span>Send Message</span>
+          </button>
+        </div>
 
-                <a class="sign-in-button" href="login.php">
-                  <img class="login-img" src="icons/login.png">
-                  <p class="sign-in-text">
-                    Sign In
-                  </p>
-                </a>
-
-                <a class="cart-button" href="cart.html">
-                  <img class="shopping-cart-img" src="icons/shopping-cart.png">
-                  <p class="cart-text">
-                    Cart
-                  </p>
-                </a>
-
-              </div>
-            </div>
-
-            <div class="header-bottom">
-              <div class="category-dropdown">
-                <button class="all-categories-btn">All Categories</button>
-
-                <ul class="category-popup">
-                  <a class="category-a" href="shop.html?category=all"><li>All</li></a>
-                  <a class="category-a" href="shop.html?category=jewelry"><li>Jewelry</li></a>
-                  <a class="category-a" href="shop.html?category=bags"><li>Bags</li></a>
-                  <a class="category-a" href="shop.html?category=clothing"><li>Clothing</li></a>
-                  <a class="category-a" href="shop.html?category=accessories"><li>Accessories</li></a>
-                </ul>
-              </div>
-
-              <nav class="navigations">
-                <a class="home-a" href="index.php">
-                  Home
-                </a>
-
-                <a class="super-deals-a" href="super-deals.html">
-                  Super Deals
-                </a>
-
-                <a class="shop-a" href="shop.html?category=all">
-                  Shop
-                </a>
-
-                <a class="about-us-a" href="about-us.html">
-                  About Us
-                </a>
-
-                <a class="contact-us-a" href="contact-us.html">
-                  Contact Us
-                </a>
-              </nav>
-            </div>
-      </header>
-
-      <div class="items-container" id="items-container">
-        <!---Render by js--->
       </div>
 
-    </div>
+      </div>
 
-    <div class="footer"> <!-- Footer -->
+  </div>
+
+  <div class="footer">
       <div class="inner-top">
         <h2 class="subscribe-title">Subscribe to our email newsletter and get 20% off</h2>
         <p class="subscribe-description">Join our community and be the first to discover new handmade collections, exclusive offers, and special drops.</p>
@@ -171,9 +122,8 @@
           </div>
         </div>
       </div>
-    </div> <!-- Footer end -->
+  </div>
 
-    <script src="js/header.js"></script>
-    <script type="module" src="js/super-deals/carts-render.js"></script>
-  </body>
+  <script src="js/header.js"></script>
+</body>
 </html>
