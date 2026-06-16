@@ -1,3 +1,8 @@
+<?php
+session_start();
+include 'includes/header.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +12,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/general.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/shop-page/cart.css">
@@ -16,76 +20,6 @@
 </head>
 <body>
   <div class="container">
-    <header class="header"> <!---Header section-->
-
-        <div class="header-top">
-
-          <a class="logo-div" href="index.php">
-            <img class="zanora-logo" src="images/Zanora-logo.png">
-          </a>
-
-          <div class="middle-section">
-            <input class="search-bar" type="text" placeholder="Search for anything">
-          </div>
-
-          <div class="user-actions">
-
-            <div  class="currency">USD</div>
-
-            <a class="sign-in-button" href="login.php">
-              <img class="login-img" src="icons/login.png">
-              <p class="sign-in-text">
-                Sign In
-              </p>
-            </a>
-
-            <a class="cart-button" href="cart.html">
-              <img class="shopping-cart-img" src="icons/shopping-cart.png">
-              <p class="cart-text">
-                Cart
-              </p>
-            </a>
-
-          </div>
-        </div>
-
-        <div class="header-bottom">
-          <div class="category-dropdown">
-            <button class="all-categories-btn">All Categories</button>
-
-            <ul class="category-popup">
-              <li data-category="all">All</li>
-              <li data-category="jewelry">Jewelry</li>
-              <li data-category="bags">Bags</li>
-              <li data-category="clothing">Clothing</li>
-              <li data-category="accessories">Accessories</li>
-            </ul>
-          </div>
-
-
-          <nav class="navigations">
-            <a class="home-a" href="index.php">
-              Home
-            </a>
-
-            <a class="super-deals-a" href="super-deals.html">
-              Super Deals
-            </a>
-
-            <a class="shop-a" href="shop.html?category=all">
-              Shop
-            </a>
-
-            <a class="about-us-a" href="about-us.html">
-              About Us
-            </a>
-
-            <a class="contact-us-a" href="contact-us.html">
-              Contact Us
-            </a>
-          </nav>
-        </div>
-    </header>
 
     <div class="filter-container"> <!---Filter container--->
 
