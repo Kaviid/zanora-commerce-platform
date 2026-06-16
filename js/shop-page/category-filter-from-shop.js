@@ -94,7 +94,7 @@ function renderProducts(f_products) {
     card.innerHTML = ` 
       <div class = "item-today-super-deals">
         <div class="inner">
-          <a href = "product-details.html?id=${f_item.id}"><img src="${f_item.image[0]}"></a>
+          <a href = "product-details.php?id=${f_item.id}"><img src="${f_item.image[0]}"></a>
           <div class="middle">
             <h3>${f_item.short_title}</h3>
             

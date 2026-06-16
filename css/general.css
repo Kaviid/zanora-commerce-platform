@@ -1,8 +1,12 @@
 *{
-    background-color: #F8F9FA;
     margin: 0px;
     padding: 0px;
     font-family: 'Manrope', sans-serif;
+    background-color: transparent;
+}
+
+body{
+    background-color: #F8F9FA;
 }
 
 .container{

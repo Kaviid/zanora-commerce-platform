@@ -43,7 +43,7 @@
             </a>            
           <?php } ?> 
 
-          <a class="cart-button" href="cart.html">
+          <a class="cart-button" href="cart.php">
             <img class="shopping-cart-img" src="icons/shopping-cart.png">
             <p class="cart-text">
               Cart

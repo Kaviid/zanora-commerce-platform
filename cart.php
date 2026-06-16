@@ -1,3 +1,8 @@
+<?php
+session_start();
+include 'includes/header.php'
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -18,82 +23,12 @@
   <body>
     <div class="container">
 
-      <header class="header"> <!---Header section-->
-
-        <div class="header-top">
-
-          <a class="logo-div" href="index.html">
-            <img class="zanora-logo" src="images/Zanora-logo.png">
-          </a>
-
-          <div class="middle-section">
-            <input class="search-bar" type="text" placeholder="Search for anything">
-          </div>
-
-          <div class="user-actions">
-
-            <div  class="currency">USD</div>
-
-            <a class="sign-in-button" href="login.html">
-              <img class="login-img" src="icons/login.png">
-              <p class="sign-in-text">
-                Sign In
-              </p>
-            </a>
-
-            <a class="cart-button" href="cart.html">
-              <img class="shopping-cart-img" src="icons/shopping-cart.png">
-              <p class="cart-text">
-                Cart
-              </p>
-            </a>
-
-          </div>
-        </div>
-
-        <div class="header-bottom">
-          <div class="category-dropdown">
-            <button class="all-categories-btn">All Categories</button>
-
-            <ul class="category-popup">
-              <a class="category-a" href="shop.html?category=all"><li>All</li></a>
-              <a class="category-a" href="shop.html?category=jewelry"><li>Jewelry</li></a>
-              <a class="category-a" href="shop.html?category=bags"><li>Bags</li></a>
-              <a class="category-a" href="shop.html?category=clothing"><li>Clothing</li></a>
-              <a class="category-a" href="shop.html?category=accessories"><li>Accessories</li></a>
-            </ul>
-          </div>
-
-
-          <nav class="navigations">
-            <a class="home-a" href="index.html">
-              Home
-            </a>
-
-            <a class="super-deals-a" href="super-deals.html">
-              Super Deals
-            </a>
-
-            <a class="shop-a" href="shop.html?category=all">
-              Shop
-            </a>
-
-            <a class="about-us-a" href="about-us.html">
-              About Us
-            </a>
-
-            <a class="contact-us-a" href="contact-us.html">
-              Contact Us
-            </a>
-          </nav>
-        </div>
-      </header>
-
       <h3 class="main-title">Your Cart</h3>
 
       <div class="details-container"> <!---Entire container of item details--->
 
-        <div class="left-side"> <!---Left side--->
+        <div class="left-side">
+
           <div class="titles-of-parts">
             <p class="prod">Products</p>
             <p>Price</p>
@@ -104,102 +39,104 @@
           <div class="item-details">
 
             <div class="per-item">
-              <button><img src="icons/delete.png" alt="delete"></button>
+              <button class="delete-btn"><img src="icons/delete.png" alt="delete"></button>
               <img src="products-resorces/5/1.jpg" class="main-img">
               <p class="product-short-title">Turquoise Necklace with White & Pink Coral</p>
-
               <div class="dis-and-ori-price">
                 <p class="ori">USD 56.67</p>
                 <p class="dis">USD 24.67</p>
               </div>
-
               <div class="quantity-container">
                 <div class="inc-decre">
-                  <button class="sign minus">-</button>
+                  <button class="sign minus">−</button>
                   <p class="value" id="q-value">1</p>
                   <button class="sign plus">+</button>
                 </div>
               </div>
-
               <p class="total-of-items">USD 24.67</p>
             </div>
 
             <div class="per-item">
-              <button><img src="icons/delete.png" alt="delete"></button>
+              <button class="delete-btn"><img src="icons/delete.png" alt="delete"></button>
               <img src="products-resorces/1/1.jpg" class="main-img">
               <p class="product-short-title">Turquoise Necklace with White & Pink Coral</p>
-
               <div class="dis-and-ori-price">
                 <p class="ori">USD 26.67</p>
                 <p class="dis">USD 12.98</p>
               </div>
-
               <div class="quantity-container">
                 <div class="inc-decre">
-                  <button class="sign minus">-</button>
+                  <button class="sign minus">−</button>
                   <p class="value" id="q-value">1</p>
                   <button class="sign plus">+</button>
                 </div>
               </div>
-
               <p class="total-of-items">USD 36.67</p>
             </div>
 
             <div class="per-item">
-              <button><img src="icons/delete.png" alt="delete"></button>
+              <button class="delete-btn"><img src="icons/delete.png" alt="delete"></button>
               <img src="products-resorces/2/1.jpg" class="main-img">
               <p class="product-short-title">Turquoise Necklace with White & Pink Coral</p>
-
               <div class="dis-and-ori-price">
                 <p class="ori">USD 56.67</p>
                 <p class="dis">USD 24.67</p>
               </div>
-
               <div class="quantity-container">
                 <div class="inc-decre">
-                  <button class="sign minus">-</button>
+                  <button class="sign minus">−</button>
                   <p class="value" id="q-value">1</p>
                   <button class="sign plus">+</button>
                 </div>
               </div>
-
               <p class="total-of-items">USD 123.67</p>
             </div>
 
           </div>
 
-        </div> 
+        </div>
 
         <div class="right-side">
           <h3>Order Summary</h3>
           <div class="bill-wrap">
+
             <div class="bill-row">
               <p class="title">Items</p>
               <p class="value">3</p>
             </div>
+
             <div class="bill-row">
               <p class="title">Sub Total</p>
               <p class="value">USD 45.78</p>
             </div>
+
             <div class="bill-row">
               <p class="title">Total Discount</p>
-              <p class="value">USD 12.56</p>
+              <p class="value discount">− USD 12.56</p>
             </div>
+
             <div class="bill-row">
               <p class="title">Shipping</p>
-              <p class="value">0</p>
+              <p class="value free">Free</p>
             </div>
+
+            <div class="divider"></div>
 
             <div class="bill-row">
               <p class="total-title">Total</p>
               <p class="total-price">USD 342.76</p>
             </div>
 
-            <button class="add-to-cart-button">
-              <span>Proceed to Checkout</span>
-            </button>
+            <button class="checkout-button">Proceed to Checkout</button>
+
           </div>
-        </div> <!---Right side--->
+
+          <div class="promo-row">
+            <input type="text" class="promo-input" placeholder="Promo code">
+            <button class="promo-btn">Apply</button>
+          </div>
+        </div>
+
       </div>
 
 
