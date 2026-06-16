@@ -52,13 +52,4 @@ if(mysqli_query($conn, $sql)){
     ]);
 }
 
-
-
-
-
-
-
-
-
-
 ?>

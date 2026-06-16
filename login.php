@@ -6,6 +6,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">  
   <link rel="stylesheet" href="css/log-register/log.css">
+  <link rel="stylesheet" href="css/log-register/notification.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 </head>
@@ -16,18 +17,24 @@
       <i class="fa-solid fa-arrow-left"></i>
     </a>
 
-    <form action="backend/auth/login.php" method="POST">
+    <form id="login-form" method="POST">
       <div class="inside-container">
         <p class="login">Login</p>
   
         <div class="email-box">
-          <label for="" class="label">Email</label>
-          <input type="text" name="email" class="type-box" placeholder="Enter email">
+          <div class="sec">
+            <label for="" class="label">Email</label>
+            <div id="email-err"></div>
+          </div>
+          <input type="text" id="email" name="email" class="type-box" placeholder="Enter email">
         </div>
   
         <div class="password-box">
-          <label for="" class="label">Password</label>
-          <input type="password" name="password" class="type-box" placeholder="Enter password">
+          <div class="sec">
+            <label for="" class="label">Password</label>
+            <div id="pass-err"></div>
+          </div>
+          <input type="password" id="password" name="password" class="type-box" placeholder="Enter password">
           <a href="#">Forgot password?</a>
         </div>
   
@@ -37,6 +44,9 @@
         </div>
       </div>
     </form>
+
+    <div id="msg-box" class="msg-box"></div>
   </div>
+  <script src="js/log-reg-page/login.js"></script>
 </body>
 </html>

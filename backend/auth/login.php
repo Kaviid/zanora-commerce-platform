@@ -1,4 +1,11 @@
 <?php
+
+//Only see with POST methods only....
+if($_SERVER["REQUEST_METHOD"] !== "POST"){
+  echo "Access denied!";
+    exit();
+}
+
 session_start();
 
 //db access
@@ -11,20 +18,26 @@ print_r($_POST);
 echo "</pre>";
 */
 
+//check email exist or not
 $email = $_POST["email"];
-$enter_password = $_POST["password"];
 
 //check email exist already in db
 $sql = "SELECT * FROM users WHERE email='$email'";
 $res = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($res) == 0 ){
-  die("Email doesn't exist!<br>Please register as a new user!");
+  echo json_encode([
+    "status" => "error",
+    "feild" => "email",
+    "message" => "Email doesn't exist, Please register as a new user!"
+  ]);
+  exit();
 }
 
 $user = mysqli_fetch_assoc($res); //now we can access values like key value pair
 
-$hashed_password = $user["password"];
+$enter_password = $_POST["password"]; //User entered pass
+$hashed_password = $user["password"]; //Get from db pass
 
 if(password_verify($enter_password, $hashed_password)){
   //store user data in session...
@@ -32,11 +45,18 @@ if(password_verify($enter_password, $hashed_password)){
   $_SESSION["fullname"] = $user["fullname"];
   $_SESSION["email"] = $user["email"];
 
-  //redirect to home page...
-  header("Location: ../../index.php");
+  echo json_encode([
+      "status" => "success",
+      "message" => "Login successful!"
+  ]);
   exit();
 }else{
-  die("Incorect passowrd!");
+  echo json_encode([
+    "status" => "error",
+    "feild" => "pass",
+    "message" => "Incorrect password!"
+  ]);
+  exit();
 }
 
 ?>
