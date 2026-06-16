@@ -28,7 +28,7 @@ session_start();
 
         <div class="header-top">
 
-          <a class="logo-div" href="index.html">
+          <a class="logo-div" href="index.php">
             <img class="zanora-logo" src="images/Zanora-logo.png">
           </a>
 
@@ -40,7 +40,7 @@ session_start();
 
             <div  class="currency">USD</div>
 
-            <a class="sign-in-button" href="login.html">
+            <a class="sign-in-button" href="login.php">
               <img class="login-img" src="icons/login.png">
               <p class="sign-in-text">
                 Sign In
@@ -71,7 +71,7 @@ session_start();
           </div>
 
           <nav class="navigations">
-            <a class="home-a" href="index.html">
+            <a class="home-a" href="index.php">
               Home
             </a>
 
