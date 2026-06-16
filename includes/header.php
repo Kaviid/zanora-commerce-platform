@@ -48,11 +48,11 @@
           <button class="all-categories-btn">All Categories</button>
 
           <ul class="category-popup">
-            <a class="category-a" href="shop.html?category=all"><li>All</li></a>
-            <a class="category-a" href="shop.html?category=jewelry"><li>Jewelry</li></a>
-            <a class="category-a" href="shop.html?category=bags"><li>Bags</li></a>
-            <a class="category-a" href="shop.html?category=clothing"><li>Clothing</li></a>
-            <a class="category-a" href="shop.html?category=accessories"><li>Accessories</li></a>
+            <a class="category-a" href="shop.php?category=all"><li>All</li></a>
+            <a class="category-a" href="shop.php?category=jewelry"><li>Jewelry</li></a>
+            <a class="category-a" href="shop.php?category=bags"><li>Bags</li></a>
+            <a class="category-a" href="shop.php?category=clothing"><li>Clothing</li></a>
+            <a class="category-a" href="shop.php?category=accessories"><li>Accessories</li></a>
           </ul>
         </div>
 
@@ -61,19 +61,19 @@
             Home
           </a>
 
-          <a class="super-deals-a" href="super-deals.html">
+          <a class="super-deals-a" href="super-deals.php">
             Super Deals
           </a>
 
-          <a class="shop-a" href="shop.html?category=all">
+          <a class="shop-a" href="shop.php?category=all">
             Shop
           </a>
 
-          <a class="about-us-a" href="about-us.html">
+          <a class="about-us-a" href="about-us.php">
             About Us
           </a>
 
-          <a class="contact-us-a" href="contact-us.html">
+          <a class="contact-us-a" href="contact-us.php">
             Contact Us
           </a>
         </nav>
