@@ -25,13 +25,23 @@
         <div class="user-actions">
 
           <div  class="currency">USD</div>
-
-          <a class="sign-in-button" href="login.php">
-            <img class="login-img" src="icons/login.png">
-            <p class="sign-in-text">
-              Sign In
-            </p>
-          </a>
+          
+          <!--Check user log or not if logged chage Sign In to Profile-->
+          <?php if(isset($_SESSION["user_id"])){ ?>
+            <a class="sign-in-button" href="profile.php">
+              <img class="login-img" src="icons/user.png">
+              <p class="sign-in-text">
+                Profile
+              </p>
+            </a>
+          <?php } else{?>
+            <a class="sign-in-button" href="login.php">
+              <img class="login-img" src="icons/login.png">
+              <p class="sign-in-text">
+                Sign In
+              </p>
+            </a>            
+          <?php } ?> 
 
           <a class="cart-button" href="cart.html">
             <img class="shopping-cart-img" src="icons/shopping-cart.png">
