@@ -36,63 +36,7 @@ include 'includes/header.php'
             <p>Subtotal</p>
           </div>
 
-          <div class="item-details">
-
-            <div class="per-item">
-              <button class="delete-btn"><img src="icons/delete.png" alt="delete"></button>
-              <img src="products-resorces/5/1.jpg" class="main-img">
-              <p class="product-short-title">Turquoise Necklace with White & Pink Coral</p>
-              <div class="dis-and-ori-price">
-                <p class="ori">USD 56.67</p>
-                <p class="dis">USD 24.67</p>
-              </div>
-              <div class="quantity-container">
-                <div class="inc-decre">
-                  <button class="sign minus">−</button>
-                  <p class="value" id="q-value">1</p>
-                  <button class="sign plus">+</button>
-                </div>
-              </div>
-              <p class="total-of-items">USD 24.67</p>
-            </div>
-
-            <div class="per-item">
-              <button class="delete-btn"><img src="icons/delete.png" alt="delete"></button>
-              <img src="products-resorces/1/1.jpg" class="main-img">
-              <p class="product-short-title">Turquoise Necklace with White & Pink Coral</p>
-              <div class="dis-and-ori-price">
-                <p class="ori">USD 26.67</p>
-                <p class="dis">USD 12.98</p>
-              </div>
-              <div class="quantity-container">
-                <div class="inc-decre">
-                  <button class="sign minus">−</button>
-                  <p class="value" id="q-value">1</p>
-                  <button class="sign plus">+</button>
-                </div>
-              </div>
-              <p class="total-of-items">USD 36.67</p>
-            </div>
-
-            <div class="per-item">
-              <button class="delete-btn"><img src="icons/delete.png" alt="delete"></button>
-              <img src="products-resorces/2/1.jpg" class="main-img">
-              <p class="product-short-title">Turquoise Necklace with White & Pink Coral</p>
-              <div class="dis-and-ori-price">
-                <p class="ori">USD 56.67</p>
-                <p class="dis">USD 24.67</p>
-              </div>
-              <div class="quantity-container">
-                <div class="inc-decre">
-                  <button class="sign minus">−</button>
-                  <p class="value" id="q-value">1</p>
-                  <button class="sign plus">+</button>
-                </div>
-              </div>
-              <p class="total-of-items">USD 123.67</p>
-            </div>
-
-          </div>
+          <div class="item-details"></div>
 
         </div>
 
@@ -226,5 +170,6 @@ include 'includes/header.php'
 
 
     <script src="js/header.js"></script>
+    <script src="js/cart/render_items.js" type="module"></script>
   </body>
 </html>
