@@ -1,4 +1,3 @@
-import { products } from "../products.js";
 import { increase, decrease } from "./quantity.js";
 import { initSlider } from "./image-slider.js";
 import { dropdownElement } from "./dropdown.js";
@@ -6,63 +5,73 @@ import { dropdownElement } from "./dropdown.js";
 const params = new URLSearchParams(window.location.search);
 const productId = params.get('id');
 
-const item = products.find(p => p.id == productId);
+loadProduct();
 
-//console.log(item.title);
+async function loadProduct() {
 
-const container = document.getElementById("all-container-main");
-const details = document.createElement("div");
+  const response = await fetch(`backend/get_product_by_id.php?id=${productId}`);
+  const item = await response.json();
 
-const thumbnailsHTML = item.image.map((img, index) => {
-  return `<img src="${img}" class="thumb ${index === 0 ? "active" : ""}">`;
-}).join("");
+  renderProduct(item);
 
-const reviews = item.reviews;
+}
 
-function renderReviews() {
-  return reviews.map(review => {
-    return `
-      <div class="review-box">
-        <div class="name-date">
-          <h3>${review.name}</h3>
-          <p>${review.date}</p>
-        </div>
-        <p class="dis">${review.comment}</p>
-      </div>
-    `;
+function renderProduct(item) {
+
+  const container = document.getElementById("all-container-main");
+  const details = document.createElement("div");
+
+  const thumbnailsHTML = item.image.map((img, index) => {
+    return `<img src="${img}" class="thumb ${index === 0 ? "active" : ""}">`;
   }).join("");
-}
 
-function checkDropdown(){
-  if (item.size_label){
-    const sizes = item.sizes.map(size => `<li>${size}</li>`).join("");
-    return    `
-                <p>${item.size_label}</p>
-              <div class="dropdown"> <!---css/dropdown.css--->
-                <div class="select">
-                  <span class="selected">Select an option</span>
-                  <img src="icons/dropdown.png" class="caret">
-                </div>
-                <ul class="menu">
-                  ${sizes}
-                </ul>
-              </div>
-            `;
-  } 
-  return ""; //return empty if no size available in selected product
-}
+  // DB doesn't have reviews yet — safe fallback to empty array
+  const reviews = item.reviews || [];
 
-details.innerHTML = `
+  function renderReviews() {
+    if (reviews.length === 0) {
+      return `<p>No reviews yet.</p>`;
+    }
+    return reviews.map(review => {
+      return `
+        <div class="review-box">
+          <div class="name-date">
+            <h3>${review.name}</h3>
+            <p>${review.date}</p>
+          </div>
+          <p class="dis">${review.comment}</p>
+        </div>
+      `;
+    }).join("");
+  }
+
+  function checkDropdown() {
+    if (item.size_label && item.sizes) {
+      const sizes = item.sizes.map(size => `<li>${size}</li>`).join("");
+      return `
+        <p>${item.size_label}</p>
+        <div class="dropdown">
+          <div class="select">
+            <span class="selected">Select an option</span>
+            <img src="icons/dropdown.png" class="caret">
+          </div>
+          <ul class="menu">
+            ${sizes}
+          </ul>
+        </div>
+      `;
+    }
+    return "";
+  }
+
+  details.innerHTML = `
 
         <div class="hero"> <!--Hero-->
 
           <div class="product-gallery">
 
               <div class="main-image"> <!-- Main image -->
-                <!-- <button class="prev"><img src="icons/left-arrow.png"></button> -->
                 <img id="mainImage" src="${item.image[0]}">
-                <!-- <button class="next"><img src="icons/right-arrow.png"></button> -->
-                
               </div>
               
               <div class="thumbnail-wrapper">
@@ -82,7 +91,6 @@ details.innerHTML = `
                   <p>Review for this item</p>
                   <img src="icons/Stars.png">
                 </div>
-              
               </div>
 
               <div class="price-and-select-section"> <!-- 2nd -->
@@ -99,7 +107,7 @@ details.innerHTML = `
 
                 <div class="size-quantity">
 
-                  <div id="size-container" class="size-container" >
+                  <div id="size-container" class="size-container">
                     ${checkDropdown()}
                   </div>
 
@@ -126,33 +134,21 @@ details.innerHTML = `
             <div class="down"> <!---Pay with--->
               <h3>Payment Methods</h3>
               <div class="payment-methods-icons">
-                <a href="#" class="visa">
-                  <img src="icons/visa.png" class="methods">
-                </a>
-                <a href="#" class="paypal">
-                  <img src="icons/paypal.png" class="methods">
-                </a>
-                <a href="#" class="payoneer">
-                  <img src="icons/payoneer.png" class="methods">
-                </a>
-                <a href="#" class="master">
-                  <img src="icons/master.png" class="methods">
-                </a>
-                <a href="#" class="bitcoin">
-                  <img src="icons/bitcoin.png" class="methods">
-                </a>
+                <a href="#" class="visa"><img src="icons/visa.png" class="methods"></a>
+                <a href="#" class="paypal"><img src="icons/paypal.png" class="methods"></a>
+                <a href="#" class="payoneer"><img src="icons/payoneer.png" class="methods"></a>
+                <a href="#" class="master"><img src="icons/master.png" class="methods"></a>
+                <a href="#" class="bitcoin"><img src="icons/bitcoin.png" class="methods"></a>
               </div>
-            </div> <!---Pay with end--->
+            </div>
           </div> 
         </div> <!--Hero end-->
 
         <div class="description-reviews">
           <div class="reviews">
-            <h1>Reviews (${item.rating})</h1>
+            <h1>Reviews (${item.rating || 0})</h1>
             <div class="reviews-with-name-date">
-
               ${renderReviews()}
-
             </div>
           </div>
           <div class="description">
@@ -163,13 +159,14 @@ details.innerHTML = `
           </div>
         </div>
 
-`;
+  `;
 
-container.appendChild(details);
+  container.appendChild(details);
 
-initSlider();
+  initSlider();
+  dropdownElement();
 
-dropdownElement();
+  document.querySelector(".plus").addEventListener("click", increase);
+  document.querySelector(".minus").addEventListener("click", decrease);
 
-document.querySelector(".plus").addEventListener("click", increase);
-document.querySelector(".minus").addEventListener("click", decrease);
+}

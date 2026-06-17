@@ -115,7 +115,7 @@ if(!isset($_SESSION["admin_id"])){
         </div>
 
         <div class="actions">
-            <a href="#" class="action-btn">Manage Products</a>
+            <a href="products.php" class="action-btn">Manage Products</a>
             <a href="#" class="action-btn">Manage Orders</a>
             <a href="logout.php" class="action-btn">Logout</a>
         </div>

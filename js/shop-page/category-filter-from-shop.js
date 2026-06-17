@@ -1,4 +1,17 @@
-import {products} from "../products.js"
+let products = [];
+loadProducts();
+
+async function loadProducts() {
+  console.log("JS Loaded");
+  try {
+    const response = await fetch("backend/get_products.php");
+    products = await response.json();
+    console.log("Products:", products);
+    renderProducts(products);
+  } catch (error) {
+    console.error(error);
+  }
+}
 
 const categories = document.querySelectorAll(".category-popup li");
 
@@ -80,7 +93,7 @@ function applyFilters() {
     filtered.sort((a,b) => b.rating - a.rating);
   } 
 
-  renderProducts(filtered); //Call this func to render filtered items and we pass filtered items as a parameter
+  //renderProducts(filtered); //Call this func to render filtered items and we pass filtered items as a parameter
 }
 
 
