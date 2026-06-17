@@ -2,7 +2,6 @@
 session_start();
 include 'includes/header.php'
 ?>
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -117,7 +116,7 @@ include 'includes/header.php'
     <script src="js/product-details-page/quantity.js"></script>
 
     <script type="module" src="js/product-details-page/render-accordingly-id.js"></script>
-    <script type="module" src="js/product-details-page/value.js"></script>
+    <script type="module" src="js/cart/addToCart.js"></script>
     <script src="js/header.js"></script>
   </body>
 </html> 
